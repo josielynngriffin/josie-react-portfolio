@@ -1,25 +1,25 @@
-
+import React, { useState } from 'react';
 //import './App.css';
+//Component Imports
+import Header from './components/Header.js';
+import Landing from './components/Landing.js';
+import About from './components/About.js';
+import Footer from './components/Footer.js';
+
+//Asset Imports
+import headshot from './assets/images/darkmode.png';
+import './assets/styles/style.css';
 
 function App() {
-  /* return (
+  
+  return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Landing headshot={headshot}/>
+      <About/>
+      <Footer/>
     </div>
-  ); */
+  );
 }
 
 export default App;
