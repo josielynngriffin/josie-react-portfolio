@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Header(props) {
-    const {onAbout, onPortfolio, onContact, onLanding} = props;
+    const {onAbout, onPortfolio, onContact, onLanding, onResume} = props;
     return (
         <div className= "Header-page">
             <header>
@@ -12,7 +12,7 @@ function Header(props) {
                     <li><a onClick={onAbout}>about me</a></li>
                     <li><a onClick={onPortfolio}>portfolio</a></li>
                     <li><a onClick={onContact}>contact</a></li>
-                    <li><a onClick={onAbout}>resume</a></li>
+                    <li><a onClick={onResume}>resume</a></li>
                     <li><i className="fa-solid fa-circle-half-stroke"></i></li>
                 </ul>
             </nav>

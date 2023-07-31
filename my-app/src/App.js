@@ -7,6 +7,7 @@ import About from './components/About.js';
 import Footer from './components/Footer.js';
 import Contact from './components/Contact.js';
 import Portfolio from './components/Portfolio.js';
+import Resume from './components/Resume.js';
 
 //Asset Imports
 //import headshot from './assets/images/darkmode.png';
@@ -26,6 +27,9 @@ function App() {
   const changePageLanding = () => {
     setPage(<Landing/>);
   }
+  const changePageResume = () => {
+    setPage(<Resume/>);
+  }
   return (
     <div className="App">
       <Header
@@ -33,6 +37,7 @@ function App() {
         onPortfolio={changePagePortfolio}
         onContact={changePageContact}
         onLanding={changePageLanding}
+        onResume={changePageResume}
       />
       {page}
 
