@@ -1,17 +1,19 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
+    const {onAbout, onPortfolio, onContact, onLanding} = props;
     return (
         <div className= "Header-page">
             <header>
-                <h1>josie griffin</h1>
+                <h1 classname="portfolio-name"><a onClick={onLanding}>josie griffin</a></h1>
             </header>
             <nav className='portfolio-nav'>
                 <ul>
-                    <li>about me</li>
-                    <li>portfolio</li>
-                    <li>contact</li>
-                    <li>resume</li>
+                    <li><a onClick={onAbout}>about me</a></li>
+                    <li><a onClick={onPortfolio}>portfolio</a></li>
+                    <li><a onClick={onContact}>contact</a></li>
+                    <li><a onClick={onAbout}>resume</a></li>
+                    <li><i className="fa-solid fa-circle-half-stroke"></i></li>
                 </ul>
             </nav>
         </div>
