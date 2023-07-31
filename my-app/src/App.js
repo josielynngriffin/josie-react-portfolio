@@ -10,7 +10,7 @@ import Portfolio from './components/Portfolio.js';
 import Resume from './components/Resume.js';
 
 //Asset Imports
-//import headshot from './assets/images/darkmode.png';
+import './assets/styles/reset.css';
 import './assets/styles/style.css';
 
 function App() {
