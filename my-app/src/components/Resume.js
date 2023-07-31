@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Contact() {
+function Resume() {
     return (
         <div>
             <p>!Under Construction</p>
         </div>
     );
 }
-
-export default Contact;
+export default Resume;
