@@ -13,8 +13,18 @@ body {
     font-family: var(--Raleway);
     background-color: var(--background-color);
     font-size:1.25rem;
-
 }
+
+.portfolio-page__wrapper{
+    min-height:100vh;
+    height:100%;
+}
+.App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
 /* HEADER AND NAV STYLING*/
 .header-wrap {
     display:flex;
@@ -22,7 +32,7 @@ body {
     justify-content: space-between;
     height: 5rem;
     align-items: center;
-    margin: 4rem 2rem;
+    margin: 4rem 4rem;
     cursor:pointer;
 }
 .portfolio-name {
@@ -58,12 +68,71 @@ body {
     color:var(--main-accent-color);
 }
 /* LANDING*/
+.landing-headshot{
+    height:480px;
+    width:380px;
+    border-radius:175px 175px 0 0 ;
+    box-shadow: 5px 10px var(--orange-highlight);
+}
+.landing-headshot:hover, .portfolio__nav-button:hover{
+    box-shadow: 10px 10px var(--orange-highlight);
+    transition:0.4s;
+}
+.landing__wrapper{
+    display:flex;
+    flex-wrap:wrap-reverse;
+    justify-content:center;
+}
+.landing__text{
+    margin:2rem;
+    width:40%;
+}
+.landing__title{
+    font-size:2.5rem;
+}
+.landing__name--color, .landing__job-title--color{
+    color:var(--main-accent-color);
+}
+
+.landing__subtitle{
+    font-size:1.5rem;
+    text-indent: 2rem;
+    margin:1rem 0;
+}
+.landing__blurb{
+    font-family: var(--Roboto);
+}
 /* ABOUT*/
 /* PORTFOLIO*/
 /*CONTACT*/
 /*RESUME*/
 /*FOOTER*/
-
+footer{
+    margin-top:auto;
+    width:70%;
+    align-self:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    padding:30px;
+}
+.footer__name{
+    font-size:2rem;
+    margin-bottom:0.5rem;
+    color:var(--main-accent-color);
+}
+.footer__small{
+    font-size:1rem;
+    font-family: var(--Roboto);
+}
+.footer__break{
+    background-color:var(--orange-highlight);
+    width:30%;
+    height:2.5px;
+    border-width:0;
+    margin-bottom:0.5rem;
+}
 /*MEDIA QUERIES*/
 @media (max-width: 1010px) {
     .header-wrap{
@@ -71,5 +140,33 @@ body {
     }
     .portfolio-name{
         margin:1rem;
+    }
+    .landing__text{
+        width: 80%;
+    }
+    .landing__wrapper{
+        margin-top:3rem;
+    }
+    .footer__break{
+        width:60%;
+    }
+}
+@media (max-width: 600px) {
+    .landing-headshot{
+        height:460px;
+        width:360px;
+    }
+    .landing__wrapper{
+        margin-top:7rem;
+    }
+    .portfolio__nav-item{
+        margin-top:0.5rem;
+    }
+    .footer__break{
+        width:60%;
+    }
+    .footer__small{
+        margin:auto;
+        text-align:center;
     }
 }
