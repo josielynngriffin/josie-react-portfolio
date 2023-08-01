@@ -1,0 +1,75 @@
+:root {
+    --Raleway: 'Raleway', sans-serif;
+    --Roboto: 'Roboto Mono', monospace;
+    --background-color:#F5F5F5;
+    --form-background-color: #5A6445;
+    --form-button-color: #B4B898;
+    --orange-highlight: #DE7E1f;
+    --main-accent-color: #5A6445;
+    --second-accent-color: #B4B898;
+
+}
+body {
+    font-family: var(--Raleway);
+    background-color: var(--background-color);
+    font-size:1.25rem;
+
+}
+/* HEADER AND NAV STYLING*/
+.header-wrap {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    margin: 4rem 2rem;
+    cursor:pointer;
+}
+.portfolio-name {
+ font-size:2.5rem;
+ color:var(--main-accent-color);
+ margin:auto;
+}
+.portfolio__nav-item {
+    font-size:1.5rem;
+    margin: 0 2rem;
+}
+.portfolio-nav {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.portfolio__nav-button {
+    background-color:var(--main-accent-color);
+    padding:10px 20px;
+    border-radius:30px;
+    color:var(--background-color);
+}
+.portfolio__nav-button:hover {
+    background-color:var(--second-accent-color);
+    transition: 0.4s;
+}
+.portfolio-name:hover, .portfolio__nav-icon:hover {
+    color:var(--second-accent-color);
+    transition: 0.4s;
+}
+.portfolio__nav-icon{
+    color:var(--main-accent-color);
+}
+/* LANDING*/
+/* ABOUT*/
+/* PORTFOLIO*/
+/*CONTACT*/
+/*RESUME*/
+/*FOOTER*/
+
+/*MEDIA QUERIES*/
+@media (max-width: 1010px) {
+    .header-wrap{
+        justify-content:center;
+    }
+    .portfolio-name{
+        margin:1rem;
+    }
+}
