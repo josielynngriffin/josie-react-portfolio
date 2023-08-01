@@ -50,7 +50,7 @@ body {
     justify-content: space-around;
     align-items:center;
 }
-.portfolio__nav-button {
+.portfolio__nav-button, .skill__container {
     background-color:var(--main-accent-color);
     padding:10px 20px;
     border-radius:30px;
@@ -87,7 +87,7 @@ body {
     margin:2rem;
     width:40%;
 }
-.landing__title{
+.landing__title, .about__title{
     font-size:2.5rem;
 }
 .landing__name--color, .landing__job-title--color{
@@ -99,10 +99,43 @@ body {
     text-indent: 2rem;
     margin:1rem 0;
 }
-.landing__blurb{
+.landing__blurb, .about__blurb{
     font-family: var(--Roboto);
 }
 /* ABOUT*/
+.about-page__wrapper{
+    display:flex;
+    flex-direction: column;
+}
+.title__break {
+    color:var(--main-accent-color);
+}
+.about__wrapper{
+    width:75%;
+    margin:4rem;
+}
+.skills__wrapper{
+    align-self:flex-end;
+    width:50%;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+}
+.skills__list{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+.skill__container{
+    margin:1rem;
+    flex-basis:25%;
+    text-align:center;
+}
+.about__blurb{
+    margin-left:1rem;
+}
+
 /* PORTFOLIO*/
 /*CONTACT*/
 /*RESUME*/
@@ -150,6 +183,12 @@ footer{
     .footer__break{
         width:60%;
     }
+    .about__wrapper{
+        width:auto;
+    }
+    .skills__wrapper{
+        width:100%;
+    }
 }
 @media (max-width: 600px) {
     .landing-headshot{
@@ -168,5 +207,13 @@ footer{
     .footer__small{
         margin:auto;
         text-align:center;
+    }
+    .skill__container{
+        flex-basis:40%;
+    }
+}
+@media (max-width: 400px) {
+    .skill__container{
+        flex-basis:50%;
     }
 }
