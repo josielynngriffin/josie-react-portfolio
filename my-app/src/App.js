@@ -103,7 +103,7 @@ function App() {
       />
       {page}
 
-      <Footer/>
+      <Footer onLanding={changePageLanding}/>
     </div>
   );
 }
