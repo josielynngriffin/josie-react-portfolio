@@ -7,6 +7,7 @@
     --orange-highlight: #DE7E1f;
     --main-accent-color: #5A6445;
     --second-accent-color: #B4B898;
+    --form-text-color: #F5F5F5;
 
 }
 
@@ -106,7 +107,7 @@ body {
 
 .landing__title,
 .about__title,
-.portfoliopage__title, .resume__title {
+.portfoliopage__title, .resume__title, .contact__title {
     font-size: 2.5rem;
 }
 
@@ -274,6 +275,68 @@ body {
     font-size:1.5rem;
 }
 /*CONTACT*/
+.contact-page__wrapper{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+}
+.contact__title{ 
+    margin: 1rem 0;
+}
+.contact__blurb{
+    width:40%;
+    margin:0 1rem;
+}
+.contact-form__container{
+    background-color:var(--form-background-color);
+    width:25rem;
+    height:30rem;
+    border-radius: 50px;
+}
+.contact-form__title{
+    text-align: center;
+    font-size:1.5rem;
+    color:var(--form-text-color);
+    margin: 1rem 0;
+}
+#contact-form{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+#contact-form > div{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+}
+.contactForm__button, #contact-form > input, #contact-form > textarea {
+    border:none;
+    border-radius:30px;
+    margin:0.5rem;
+}
+#contact-form > textarea{
+    resize:none;
+    height:10rem;
+}
+#contact-form > textarea, #contact-form > input{
+    text-indent:0.7rem;
+}
+#contact-form > label{
+    align-self:flex-start;
+    color:var(--form-text-color);
+    font-weight:bolder;
+}
+#contact-form{
+    margin: 0 4.5rem;
+}
+.contactForm__button{
+    width: 40%;
+    align-self:flex-end;
+    height:2rem;
+    background-color: var(--form-button-color);
+    color:var(--form-text-color);
+}
 /*RESUME*/
 .resume__page{
     display:flex;
@@ -286,10 +349,9 @@ body {
 .pdf__wrap{
     width:60%;
 }
-/* .pdfViewer{
+.pdf__wrap > embed{
     width:100%;
-    height:100%;
-} */
+}
 /*FOOTER*/
 footer {
     margin-top: auto;
@@ -371,6 +433,16 @@ footer {
     .portfolio__project--info{
         align-items:flex-start;
     }
+    .about-page__wrapper{
+        margin:0 5%;
+    }
+    .contact__blurb{
+        width:80%;
+        margin:2rem;
+    }
+    .pdf__wrap{
+        width:100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -378,8 +450,10 @@ footer {
         height: 460px;
         width: 360px;
     }
-
-    .landing__wrapper {
+    .about-page__wrapper{
+        margin:0rem;
+    }
+    .landing__wrapper, .contact-page__wrapper, .resume__page, .portfolio__wrapper, .about-page__wrapper {
         margin-top: 7rem;
     }
 
@@ -407,6 +481,19 @@ footer {
     }
     .portfolio__project--info, .portfolio__project--info-even {
         min-width: 331px;
+    }
+    .contact-form__container{
+        margin:1.5rem;
+    }
+    .pdf__wrap{
+        width:100%;
+    }
+    .contact-form__container{
+        width:23rem;
+        height:28rem;
+    }
+    #contact-form{
+        margin: 0 1.5rem;
     }
 }
 
