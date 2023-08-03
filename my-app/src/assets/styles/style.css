@@ -106,7 +106,7 @@ body {
 
 .landing__title,
 .about__title,
-.portfoliopage__title {
+.portfoliopage__title, .resume__title {
     font-size: 2.5rem;
 }
 
@@ -275,6 +275,21 @@ body {
 }
 /*CONTACT*/
 /*RESUME*/
+.resume__page{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.resume__title{
+    margin:1rem;
+}
+.pdf__wrap{
+    width:60%;
+}
+/* .pdfViewer{
+    width:100%;
+    height:100%;
+} */
 /*FOOTER*/
 footer {
     margin-top: auto;
