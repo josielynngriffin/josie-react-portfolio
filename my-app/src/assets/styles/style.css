@@ -71,9 +71,10 @@ body {
 }
 
 .portfolio-name:hover,
-.portfolio__nav-icon:hover {
+.portfolio__nav-icon:hover, .footer__name:hover {
     color: var(--second-accent-color);
     transition: 0.4s;
+    cursor:pointer;
 }
 
 .portfolio__nav-icon {
