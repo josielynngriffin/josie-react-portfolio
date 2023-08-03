@@ -382,7 +382,9 @@ footer {
     border-width: 0;
     margin-bottom: 0.5rem;
 }
-
+.footer__contact{
+    display:flex;
+}
 /*MEDIA QUERIES*/
 @media (max-width: 1200px) {
     .portfolio__project--info, .portfolio__project--info-even {
