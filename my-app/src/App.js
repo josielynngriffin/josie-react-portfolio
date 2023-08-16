@@ -14,6 +14,7 @@ import Catterday from './assets/images/catterday-screenshot.png';
 import Workday from './assets/images/workday-screenshot.png';
 import Jate from './assets/images/jate-screenshot.png';
 import Notes from './assets/images/notes-screenshot.png';
+import Feev from './assets/images/feev-screenshot.png'
 //Asset Imports
 import './assets/styles/reset.css';
 import './assets/styles/style.css';
@@ -34,13 +35,22 @@ function App() {
       skills: ['Express.js', 'Handlebars.js', 'MySQL', 'JavaScript'],
     },
     {
+      name:"feev.io",
+      githubLink:"https://github.com/Cat-Scratch-Feev/trivia-feev",
+      liveLink:"https://feevio-9028928ec5ce.herokuapp.com/",
+      image:Feev,
+      imgAlt:'Screenshot of feev.io web application showcasing the landing page, sign up and log in links with informational graphics.',
+      description:"A trivia application, elevated with a visually fun and responsive interface. Users can sign in and compete in a broad range of categories to earn a spot on feev.io's leaderboard!",
+      skills: ['React.js', 'GraphQL', 'MongoDB', 'Mongoose', 'JavaScript'],
+    },
+    {
       name:"Catterday",
       githubLink:"https://github.com/Cat-Scratch-Feev/Catterday",
       liveLink:"https://cat-scratch-feev.github.io/Catterday/",
       image:Catterday,
       imgAlt:'Screenshot of Catterday web application showcasing the navigation, header, and two sample generated cat profiles with jokes.',
       description:"Inspired by the Useless Web, Catterday is a silly website that uses API to generate cat jokes and profiles. It's a bit of a parody of social media for entertainment only. ",
-      skills: ['HTML', 'CSS', 'APIs']
+      skills: ['HTML', 'CSS', 'JavaScript', 'APIs']
     },
     {
       name:"Just Another Text Editor",
@@ -48,7 +58,7 @@ function App() {
       liveLink:"https://powerful-refuge-08388-9a04dc55601c.herokuapp.com/",
       image:Jate,
       imgAlt:'Screenshot of Just Another Text Editor web application showcasing the default editor screen with no input.',
-      description:"This is a simple text editor that functions as a Progressive Web Application(PWA). It runs offline and is installable to your desktop.",
+      description:"This is a simple text editor that functions as a Progressive Web Application (PWA). It runs offline and is installable to your desktop.",
       skills: ['Node.js', 'Express.js', 'Webpack', 'IndexedDB']
     },
     {
