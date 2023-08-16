@@ -22,10 +22,10 @@ To run this locally, follow these instructions! Otherwise simply follow the depl
 
 
 ## Usage
-Follow the deployment link or run `npm run start` in your terminal, then explore at your own pace! I hope you enjoy my portfolio :) 
+Follow the deployment link or run `npm run start` in your terminal after following installation instructions, then explore at your own pace! I hope you enjoy my portfolio :) 
 
 ## Screenshots
-![Screenshot of the landing page of the portfolio](./my-app/src/assets/images/portfolio-screenshot.png);
+![Screenshot of the landing page of the portfolio](./my-app/src/assets/images/portfolio-screenshot.png)
 
 ## Link to Deployed Page
 
