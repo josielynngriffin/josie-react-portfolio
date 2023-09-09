@@ -1,10 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+function Footer() {
 
-function Footer(props) {
-    const {onLanding} = props;
     return (
         <footer classname="footer__wrapper">
-            <h4 className="footer__name" onClick={onLanding}>josie griffin</h4>
+            <Link to="/"><h4 className="footer__name">josie griffin</h4></Link>
             <hr className="footer__break"></hr>
             <small className="footer__small">jelynngriffin@gmail.com | © josie griffin dev</small>
             <section className="footer__contact">

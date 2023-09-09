@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //Component Imports
 import Header from './components/Header.js';
@@ -20,10 +21,7 @@ import './assets/styles/reset.css';
 import './assets/styles/style.css';
 
 function App() {
-  const [page,setPage] = useState(<Landing/>);
-  const changePageAbout = () => {
-    setPage(<About/>);
-  };
+ 
   const projects = [
     {
       name:"Somniary",
@@ -89,32 +87,22 @@ function App() {
       skills: ['Express.js', 'JavaScript', 'CSS'],
     },
   ]
-  const changePagePortfolio = () => {
-    setPage(<Portfolio projects={projects} Somniary={Somniary}/>);
-  };
-  const changePageContact = () => {
-    setPage(<Contact/>);
-  };
-  const changePageLanding = () => {
-    setPage(<Landing/>);
-  }
-  const changePageResume = () => {
-    setPage(<Resume/>);
-  }
   
   return (
-    <div className="portfolio-page__wrapper App" >
-      <Header
-        onAbout={changePageAbout}
-        onPortfolio={changePagePortfolio}
-        onContact={changePageContact}
-        onLanding={changePageLanding}
-        onResume={changePageResume}
-      />
-      {page}
+    <Router>
+      <div className="portfolio-page__wrapper App" >
+        <Header/>
+        <Routes>
+          <Route path='/' element={<Landing/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/portfolio' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/resume' element={<Resume/>}/>
 
-      <Footer onLanding={changePageLanding}/>
-    </div>
+        </Routes>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
