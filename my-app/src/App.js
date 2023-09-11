@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 //Component Imports
 import Header from './components/Header.js';
@@ -89,7 +89,7 @@ function App() {
   ]
   
   return (
-    <Router>
+    <HashRouter>
       <div className="portfolio-page__wrapper App" >
         <Header/>
         <Routes>
@@ -102,7 +102,7 @@ function App() {
         </Routes>
         <Footer/>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
