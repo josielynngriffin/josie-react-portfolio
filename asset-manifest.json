@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/josie-react-portfolio/static/css/main.04f32974.css",
-    "main.js": "/josie-react-portfolio/static/js/main.18a8da06.js",
+    "main.js": "/josie-react-portfolio/static/js/main.0ed20450.js",
     "static/js/787.28cb0dcd.chunk.js": "/josie-react-portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/lightmode.png": "/josie-react-portfolio/static/media/lightmode.cf6b053b5fed65ebf1d4.png",
     "static/media/somniary-landing.png": "/josie-react-portfolio/static/media/somniary-landing.3c510a8cca03a69ad1b2.png",
@@ -11,14 +11,14 @@
     "static/media/workday-screenshot.png": "/josie-react-portfolio/static/media/workday-screenshot.cc1fc962258e2e3238a8.png",
     "static/media/jate-screenshot.png": "/josie-react-portfolio/static/media/jate-screenshot.e25e8b8b4626ba31c9b3.png",
     "static/media/notes-screenshot.png": "/josie-react-portfolio/static/media/notes-screenshot.04fa8ec6d1fe7faef6f2.png",
-    "static/media/josie-griffin-resume.pdf": "/josie-react-portfolio/static/media/josie-griffin-resume.5083c82ba98a1b3c3d24.pdf",
+    "static/media/josie-griffin-resume.pdf": "/josie-react-portfolio/static/media/josie-griffin-resume.d034a36d6550c632b463.pdf",
     "index.html": "/josie-react-portfolio/index.html",
     "main.04f32974.css.map": "/josie-react-portfolio/static/css/main.04f32974.css.map",
-    "main.18a8da06.js.map": "/josie-react-portfolio/static/js/main.18a8da06.js.map",
+    "main.0ed20450.js.map": "/josie-react-portfolio/static/js/main.0ed20450.js.map",
     "787.28cb0dcd.chunk.js.map": "/josie-react-portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04f32974.css",
-    "static/js/main.18a8da06.js"
+    "static/js/main.0ed20450.js"
   ]
 }
