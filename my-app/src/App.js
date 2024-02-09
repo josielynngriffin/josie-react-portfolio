@@ -8,6 +8,7 @@ import About from './components/About.js';
 import Footer from './components/Footer.js';
 import Contact from './components/Contact.js';
 import Portfolio from './components/Portfolio.js';
+import UXPortfolio from './components/UXPortfolio.js';
 import Resume from './components/Resume.js';
 import Somniary from './assets/images/somniary-landing.png';
 import WeatherDash from './assets/images/weather-dashboard.png';
@@ -87,7 +88,7 @@ function App() {
       skills: ['Express.js', 'JavaScript', 'CSS'],
     },
   ]
-  
+
   return (
     <HashRouter>
       <div className="portfolio-page__wrapper App" >
@@ -95,7 +96,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Landing/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path='/portfolio' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
+          <Route path='/ux-ui' element={<UXPortfolio/>}/>
+          <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
 
