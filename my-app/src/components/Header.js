@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className= "header-wrap">
             <header>
-                <Link to='/'><h1 className="portfolio-name">josie griffin</h1></Link>
+                <Link to='/'><h1 className="portfolio-name">josie <span className='portfolio-name__span'>griffin</span></h1></Link>
             </header>
             <nav>
                 <ul className='portfolio-nav'>

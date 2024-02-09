@@ -17,7 +17,7 @@ function Contact() {
     return (
         <div className="contact-page__wrapper">
             <section className="contact__blurb">
-                <h2 className="contact__title"><span className="title__break">|</span> contact me</h2>
+                <h1 className="contact__title"><span className="title__break">|</span> contact me</h1>
                 <p>i’m always looking for more opportunities and to connect! get in touch with me anytime or follow my development on my socials below :) </p>
                 <a href="https://github.com/josielynngriffin" target="_blank"><i className="portfolio__icon fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/josiegriffin/" target="_blank"><i className="portfolio__icon fa-brands fa-linkedin"></i></a>
