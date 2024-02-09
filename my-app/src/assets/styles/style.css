@@ -1,6 +1,7 @@
 :root {
-    --Raleway: 'Raleway', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
     --Roboto: 'Roboto Mono', monospace;
+    --Roca: "roca", sans-serif;
     --background-color: #F5F5F5;
     --form-background-color:#B4B898 ;
     --form-button-color:#5A6445 ;
@@ -11,11 +12,16 @@
 }
 
 body {
-    font-family: var(--Raleway);
+    font-family: var(--Roboto);
     background-color: var(--background-color);
     font-size: 1.25rem;
 }
-
+h1, h2, h3 {
+    font-family: var(--Roca);
+}
+h4, h5, h6 {
+    font-family: var(--Montserrat);
+}
 .portfolio-page__wrapper {
     min-height: 100vh;
     height: 100%;
@@ -40,14 +46,21 @@ body {
 }
 
 .portfolio-name {
+    font-family:var(--Roca);
     font-size: 2.5rem;
+    font-weight:700;
     color: var(--main-accent-color);
-    margin: auto;
+    
+}
+.portfolio-name__span{
+    font-weight:300;
+    color:black;
 }
 
 .portfolio__nav-item {
     font-size: 1.5rem;
     margin: 0 2rem;
+    font-family:var(--Montserrat);
 }
 
 .portfolio-nav {
@@ -124,7 +137,7 @@ body {
 
 .landing__blurb,
 .about__blurb {
-    font-family: var(--Roboto);
+    margin-bottom:1rem;
 }
 
 /* ABOUT*/
