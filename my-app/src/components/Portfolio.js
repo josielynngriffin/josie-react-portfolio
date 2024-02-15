@@ -6,7 +6,7 @@ function Portfolio({projects, Somniary}) {
     
     return (
         <div className="portfolio__wrapper">
-            <h1 className="portfoliopage__title"><span className="title__break">|</span> my work</h1>
+            <h1 className="portfoliopage__title"><span className="title__break">|</span> my web dev projects</h1>
             <section className="portfolio__projects">
                 {projects.map((project, index) =>{
                     return(
