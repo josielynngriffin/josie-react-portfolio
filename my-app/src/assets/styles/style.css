@@ -151,8 +151,13 @@ h4, h5, h6 {
     color: var(--main-accent-color);
 }
 
-.about__wrapper {
+.about__wrapper, .moreabout__wrapper {
     margin: 4rem;
+}
+
+.moreabout__wrapper{
+    width:50%;
+    align-self:flex-end;
 }
 .about__title{
     margin:1rem 0;
@@ -187,9 +192,6 @@ h4, h5, h6 {
     text-align: center;
 }
 
-.about__blurb {
-    margin-left: 1rem;
-}
 
 /* PORTFOLIO*/
 .portfolio__project-image,
