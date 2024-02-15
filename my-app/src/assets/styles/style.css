@@ -421,7 +421,7 @@ footer {
         width: 60%;
     }
 
-    .about__wrapper {
+    .about__wrapper, .moreabout__wrapper {
         width: auto;
     }
 
