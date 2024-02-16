@@ -92,7 +92,23 @@ h4, h5, h6 {
 .portfolio__nav-icon {
     color: var(--main-accent-color);
 }
-
+/* MOBILE NAV*/
+.mobile-nav__menu{
+    display:none;
+}
+.offcanvas {
+    background-color: var(--main-accent-color);
+}
+.portfolio__nav-item-m, .portfolio-name__span-m, .mobile-nav-close{
+    color:var(--background-color);
+}
+.btn-close{
+    background-image: none;
+    opacity: 100%;
+}
+.portfolio-name-m{
+    color:var(--second-accent-color);
+}
 /* LANDING*/
 .landing-headshot {
     height: 480px;
@@ -400,7 +416,7 @@ footer {
 .portfolio__project--info{
     align-items:flex-start;
 }
-@media (max-width: 1010px) {
+@media (max-width: 1024px) {
     .header-wrap {
         justify-content: center;
     }
@@ -451,6 +467,28 @@ footer {
     .pdf__wrap{
         width:100%;
     }
+    .portfolio__nav-item {
+        margin:1rem 0;
+    }
+    .header-wrap, .offcanvas-header{
+        margin:0rem 1rem;
+        height:10rem;
+    }
+    .mobile-nav{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        width:100%;
+    }
+    .portfolio-nav{
+        flex-flow:column;
+    }
+    .mobile-nav__menu{
+        display:block;
+    }
+    .portfolio-nav-hidden{
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -460,13 +498,6 @@ footer {
     }
     .about-page__wrapper{
         margin:0rem;
-    }
-    .landing__wrapper, .contact-page__wrapper, .resume__page, .portfolio__wrapper, .about-page__wrapper {
-        margin-top: 7rem;
-    }
-
-    .portfolio__nav-item {
-        margin-top: 0.5rem;
     }
 
     .footer__break {
