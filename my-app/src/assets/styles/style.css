@@ -44,7 +44,9 @@ h4, h5, h6 {
     margin: 4rem 4rem;
     cursor: pointer;
 }
-
+.active {
+    font-weight:700;
+}
 .portfolio-name {
     font-family:var(--Roca);
     font-size: 2.5rem;
