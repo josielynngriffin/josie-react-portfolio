@@ -3,13 +3,13 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 
 //Component Imports
 import Header from './components/Header.js';
-import Landing from './components/Landing.js';
-import About from './components/About.js';
+import Landing from './pages/Landing.js';
+import About from './pages/About.js';
 import Footer from './components/Footer.js';
-import Contact from './components/Contact.js';
-import Portfolio from './components/Portfolio.js';
-import UXPortfolio from './components/UXPortfolio.js';
-import Resume from './components/Resume.js';
+import Contact from './pages/Contact.js';
+import Portfolio from './pages/Portfolio.js';
+import UXPortfolio from './pages/UXPortfolio.js';
+import Resume from './pages/Resume.js';
 import Somniary from './assets/images/somniary-landing.png';
 import WeatherDash from './assets/images/weather-dashboard.png';
 import Catterday from './assets/images/catterday-screenshot.png';
