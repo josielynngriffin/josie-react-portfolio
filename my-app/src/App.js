@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
-//Component Imports
-import Header from './components/Header.js';
+//Page Imports
 import Landing from './pages/Landing.js';
 import About from './pages/About.js';
-import Footer from './components/Footer.js';
 import Contact from './pages/Contact.js';
 import Portfolio from './pages/Portfolio.js';
 import UXPortfolio from './pages/UXPortfolio.js';
 import Resume from './pages/Resume.js';
+
+//Component Imports
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+
+//Image Imports
 import Somniary from './assets/images/somniary-landing.png';
 import WeatherDash from './assets/images/weather-dashboard.png';
 import Catterday from './assets/images/catterday-screenshot.png';
@@ -17,6 +21,7 @@ import Workday from './assets/images/workday-screenshot.png';
 import Jate from './assets/images/jate-screenshot.png';
 import Notes from './assets/images/notes-screenshot.png';
 import Feev from './assets/images/feev-screenshot.png'
+
 //Asset Imports
 import './assets/styles/reset.css';
 import './assets/styles/style.css';
@@ -87,7 +92,35 @@ function App() {
       description:"A simple user-friendly note taking application that saves and routes to your note entries.",
       skills: ['Express.js', 'JavaScript', 'CSS'],
     },
-  ]
+  ];
+  
+  const uxProjects = [
+    {
+      name:"Bloomer - A Plant Care App",
+      link:"/about",
+      image:Somniary,
+      imgAlt:'.',
+      description:"This plant care app case study exemplifies a holistic approach to user-centered design, from meticuluous research to iterative prototyping. By staying attuned to user needs, embracing collaboration, and consistently iterating, we delivered a concept that promises to redefine the plant care experience.",
+      skills: ['UX Research -', 'UI Design -', 'User Testing'],
+    },
+    {
+      name:"U.S. Fish & Wildlife - Government Redesign",
+      link:"/about",
+      image:Feev,
+      imgAlt:'.',
+      description:"This redesign project for the U.S Fish & Wildlife Services website was a comprehensive undertaking aimed at revitalizing the organization's online presence. By addressing user pain points, optimizing information architecture, and prioritizing responsive design, this project resulted in a user-friendly and visually engaging platform.",
+      skills: ['UX Research -', 'Branding Identity -', 'Responsive Web Design'],
+    },
+    {
+      name:"Loving Care Cat Rescue - Nonprofit Redesign",
+      link:"/about",
+      image:Feev,
+      imgAlt:'.',
+      description:"The Loving Care Cat Rescue website redesign aimed to create a more user-friendly, engaging, and mission-driven online experience. Through meticulous research, ideation, and iterative prototyping, the project successfully addressed usability barriers and enhanced the overall visual and interactive appeal of the website.",
+      skills: ['UX Research -', 'Branding Identity -', 'Responsive Web Design'],
+    },
+  ];
+
 
   return (
     <HashRouter>
@@ -96,7 +129,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Landing/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path='/ux-ui' element={<UXPortfolio/>}/>
+          <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
