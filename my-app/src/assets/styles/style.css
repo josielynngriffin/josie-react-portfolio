@@ -5,7 +5,7 @@
     --background-color: #F5F5F5;
     --form-background-color:#B4B898 ;
     --form-button-color:#5A6445 ;
-    --orange-highlight: #DE7E1f;
+    --orange-highlight: #BA602D;
     --main-accent-color: #5A6445;
     --second-accent-color: #B4B898;
     --form-text-color: #F5F5F5;
@@ -287,12 +287,24 @@ h4, h5, h6 {
 .project__skills--list {
     display: flex;
     flex-flow:row wrap;
-    margin: 0.5rem 0;
+  
 }
 
 .project__skills--list>li {
     margin: 0 0.5rem;
 }
+
+ul {
+    padding-left:0;
+}
+.portfolio-case__link{
+    color: var(--orange-highlight);
+    text-decoration: underline;
+}
+.portfolio-case__link:hover{
+    font-weight:700;
+}
+
 .project__title{
     color:var(--main-accent-color);
     font-weight:bolder;
