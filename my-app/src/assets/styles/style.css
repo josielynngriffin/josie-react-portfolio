@@ -180,18 +180,18 @@ h4, h5, h6 {
 .about__title{
     margin:1rem 0;
 }
+.skills__title{
+    margin:4rem 0;
+}
 .skills__wrapper {
-    align-self: flex-end;
-    width: 80%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
 }
 .skill__container {
     background-color: var(--main-accent-color);
     height: 3.5rem;
-    min-width:5rem;
+    min-width:3rem;
     border-radius: 30px;
     display:flex;
     justify-content: center;
@@ -216,6 +216,7 @@ h4, h5, h6 {
 .project-img {
     width: 600px;
     height: 380px;
+    border-radius: 50px;
     opacity: 85%;
 }
 

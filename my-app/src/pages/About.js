@@ -1,7 +1,7 @@
 import React from 'react';
 
 function About() {
-    const skills=['JavaScript', 'UX/UI Design', 'MongoDB', 'Accessibility', 'React', 'MySQL'
+    const skills=['JavaScript', 'MongoDB', 'SQL', 'React','Accessibility', 'UI Design', 'Branding', 'User Testing', 'Prototyping'
     ]
     return (
         <div className="about-page__wrapper">
@@ -16,9 +16,7 @@ function About() {
                 <p className="about__blurb">Outside of development, I love to spend time in the kitchen, get outdoors, and read! I am always trying to learn new things.</p>
             </section>
             <section className="skills__wrapper">
-                
-                <h2 className="about__title"><span className="title__break">|</span>  skills</h2>
-                
+                <h2 className="about__title skills__title"><span className="title__break">|</span>  skills</h2>
                 <ul class="skills__list">
                 
                     {skills.map((skill) => {
