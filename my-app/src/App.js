@@ -20,7 +20,10 @@ import Catterday from './assets/images/catterday-screenshot.png';
 import Workday from './assets/images/workday-screenshot.png';
 import Jate from './assets/images/jate-screenshot.png';
 import Notes from './assets/images/notes-screenshot.png';
-import Feev from './assets/images/feev-screenshot.png'
+import Feev from './assets/images/feev-screenshot.png';
+import LCCR from './assets/images/lccr-project-preview.png';
+import FWS from './assets/images/fws-project-preview.png';
+import Bloomer from './assets/images/bloomer-project-preview.png';
 
 //Asset Imports
 import './assets/styles/reset.css';
@@ -93,12 +96,12 @@ function App() {
       skills: ['Express.js', 'JavaScript', 'CSS'],
     },
   ];
-  
+
   const uxProjects = [
     {
       name:"Bloomer - A Plant Care App",
       link:"/about",
-      image:Somniary,
+      image:Bloomer,
       imgAlt:'.',
       description:"This plant care app case study exemplifies a holistic approach to user-centered design, from meticuluous research to iterative prototyping. By staying attuned to user needs, embracing collaboration, and consistently iterating, we delivered a concept that promises to redefine the plant care experience.",
       skills: ['UX Research -', 'UI Design -', 'User Testing'],
@@ -106,7 +109,7 @@ function App() {
     {
       name:"U.S. Fish & Wildlife - Government Redesign",
       link:"/about",
-      image:Feev,
+      image:FWS,
       imgAlt:'.',
       description:"This redesign project for the U.S Fish & Wildlife Services website was a comprehensive undertaking aimed at revitalizing the organization's online presence. By addressing user pain points, optimizing information architecture, and prioritizing responsive design, this project resulted in a user-friendly and visually engaging platform.",
       skills: ['UX Research -', 'Branding Identity -', 'Responsive Web Design'],
@@ -114,7 +117,7 @@ function App() {
     {
       name:"Loving Care Cat Rescue - Nonprofit Redesign",
       link:"/about",
-      image:Feev,
+      image:LCCR,
       imgAlt:'.',
       description:"The Loving Care Cat Rescue website redesign aimed to create a more user-friendly, engaging, and mission-driven online experience. Through meticulous research, ideation, and iterative prototyping, the project successfully addressed usability barriers and enhanced the overall visual and interactive appeal of the website.",
       skills: ['UX Research -', 'Branding Identity -', 'Responsive Web Design'],
