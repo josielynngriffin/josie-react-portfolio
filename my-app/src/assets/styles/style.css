@@ -115,12 +115,15 @@ h4, h5, h6 {
 .landing-headshot {
     height: 480px;
     width: 380px;
+    
+}
+.landing-headshot, .about-hero {
     border-radius: 175px 175px 0 0;
     box-shadow: 5px 10px var(--orange-highlight);
 }
 
 .landing-headshot:hover,
-.portfolio__nav-button:hover {
+.portfolio__nav-button:hover, .about-hero:hover {
     box-shadow: 10px 10px var(--orange-highlight);
     transition: 0.4s;
 }
@@ -159,6 +162,15 @@ h4, h5, h6 {
 }
 
 /* ABOUT*/
+.about-hero{
+    width:70%;
+    height:auto;
+}
+
+.about-hero__wrapper{
+    display:flex;
+    justify-content: center;
+}
 .about-page__wrapper {
     display: flex;
     flex-direction: column;
@@ -217,22 +229,6 @@ h4, h5, h6 {
     width: 600px;
     height: 380px;
     border-radius: 50px;
-    opacity: 85%;
-}
-
-.project-img {
-    filter: grayscale(100%) contrast(1);
-}
-
-.project-img {
-    background-color: var(--form-button-color);
-}
-
-.project-img:hover {
-    opacity: 100%;
-    mix-blend-mode: normal;
-    transition: .03s;
-    filter: grayscale(0%) contrast(1);
 }
 
 .portfoliopage__title {
@@ -504,6 +500,13 @@ footer {
     .portfolio-nav-hidden{
         display: none;
     }
+    .about-hero{
+        width:90%;
+        margin:1rem;
+    }
+    .skills__title{
+        margin: 1rem 4rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -548,6 +551,9 @@ footer {
     }
     #contact-form{
         margin: 0 1.5rem;
+    }
+    .about-hero{
+        border-radius:100px 100px 0 0;
     }
 }
 

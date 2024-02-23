@@ -1,10 +1,14 @@
 import React from 'react';
+import aboutHero from '../assets/images/about-photo.png';
 
 function About() {
     const skills=['JavaScript', 'MongoDB', 'SQL', 'React','Accessibility', 'UI Design', 'Branding', 'User Testing', 'Prototyping'
     ]
     return (
         <div className="about-page__wrapper">
+            <section className="about-hero__wrapper">
+                <img className="about-hero" src={aboutHero} alt="."/>
+            </section>
             <section className="about__wrapper">
                 <h1 className="about__title"><span className="title__break">|</span> about me</h1>
                 <p className="about__blurb">I turned to web dev because I love making things! I'm well versed in collaborating within team environments to bring projects to life and can quickly adapt to new technologies.</p> 
