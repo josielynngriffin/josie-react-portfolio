@@ -69,7 +69,10 @@ h4, h5, h6,.portfolio__nav-item {
     font-size: 1.5rem;
     margin: 0 2rem;
 }
-
+.portfolio__nav-item:hover, .portfolio-name__span:hover {
+    font-weight: 700;
+    transition: 0.4s;
+}
 .portfolio-nav {
     display: flex;
     flex-flow: row wrap;
@@ -87,6 +90,7 @@ h4, h5, h6,.portfolio__nav-item {
 .portfolio__nav-button:hover {
     background-color: var(--second-accent-color);
     transition: 0.4s;
+    font-weight: 700;
 }
 
 .portfolio-name:hover,
@@ -377,6 +381,12 @@ ul {
     padding:1rem 0;
     background-color: var(--form-button-color);
     color:var(--form-text-color);
+}
+.contactForm__button:hover{
+    width:55%;
+    font-weight: 700;
+    transition: 0.5s;
+    background-color:#515A3D;
 }
 /*RESUME*/
 .resume__page{
