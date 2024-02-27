@@ -12,6 +12,7 @@ import Resume from './pages/Resume.js';
 //Component Imports
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
+import ScrollButton from './components/ScrollButton.js';
 
 //Image Imports
 import Somniary from './assets/images/somniary-landing.png';
@@ -136,8 +137,8 @@ function App() {
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
-
         </Routes>
+        <ScrollButton/>
         <Footer/>
       </div>
     </HashRouter>

@@ -40,6 +40,27 @@ h4, h5, h6,.portfolio__nav-item {
     font-size: 2.5rem;
 }
 
+/* SCROLL TO TOP BUTTON */
+.scrollButton{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2rem; 
+    right: 3rem; 
+    z-index: 99; 
+    padding: 15px; /* Some padding */
+    border-radius: 15px 15px 0 0;
+    border: none; 
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+    color:black;
+    background-color: var(--second-accent-color);
+}
+
+.scrollButton:hover{
+    background-color: var(--main-accent-color);
+    color: white;
+}
+
 /* HEADER AND NAV STYLING*/
 .header-wrap {
     display: flex;
@@ -91,6 +112,7 @@ h4, h5, h6,.portfolio__nav-item {
     background-color: var(--second-accent-color);
     transition: 0.4s;
     font-weight: 700;
+    color:black;
 }
 
 .portfolio-name:hover,
@@ -158,7 +180,7 @@ h4, h5, h6,.portfolio__nav-item {
 }
 
 .landing-headshot:hover,
-.portfolio__nav-button:hover, .about-hero:hover {
+.portfolio__nav-button:hover, .about-hero:hover, .scrollButton:hover {
     box-shadow: 10px 10px var(--orange-highlight);
     transition: 0.4s;
 }
@@ -572,6 +594,10 @@ footer {
     }
     .about-hero{
         border-radius:100px 100px 0 0;
+    }
+    .scrollButton{
+        bottom:1rem;
+        right:1rem;
     }
 }
 
