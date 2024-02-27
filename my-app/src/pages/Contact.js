@@ -26,21 +26,20 @@ function Contact() {
 
             </section>
             <section className="contact-form__container">
-                <h1 className="contact-form__title">Contact</h1>
                 <form id="contact-form" action="form-process.php" onSubmit={handleSubmit}>
                     
-                        <label htmlFor="name">Name:</label>
-                        <input type='text' name="name" defaultValue={name} onChange={handleChange}/> 
+                        <label htmlFor="name">name</label>
+                        <input type='text' name="name" defaultValue={name} onChange={handleChange} placeholder='first last'/> 
                     
 
                     
-                        <label htmlFor="email">Email address:</label>
-                        <input type="email" name="email" defaultValue={email} onChange={handleChange}/>
+                        <label htmlFor="email">email *</label>
+                        <input type="email" name="email" defaultValue={email} onChange={handleChange} placeholder='your@gmail.com'/>
                     
-                        <label htmlFor="message">Message:</label>
-                        <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} />
+                        <label htmlFor="message">your message *</label>
+                        <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} placeholder='message me about anything!' />
                     
-                        <button className="contactForm__button" type="submit">Submit</button>
+                        <button className="contactForm__button" type="submit">submit</button>
 
                 </form>
             </section>

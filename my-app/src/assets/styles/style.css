@@ -10,28 +10,34 @@
     --second-accent-color: #B4B898;
     --form-text-color: #F5F5F5;
 }
-
+/*GENERAL */
 body {
     font-family: var(--Roboto);
     background-color: var(--background-color);
     font-size: 1.25rem;
-}
-h1, h2, h3 {
-    font-family: var(--Roca);
-}
-h4, h5, h6 {
-    font-family: var(--Montserrat);
-}
-.portfolio-page__wrapper {
-    min-height: 100vh;
-    height: 100%;
 }
 
 .App {
     height: 100%;
     display: flex;
     flex-direction: column;
+}
 
+.portfolio-page__wrapper {
+    min-height: 100vh;
+    height: 100%;
+}
+h1, h2, h3, .footer__name {
+    font-family: var(--Roca);
+}
+h4, h5, h6,.portfolio__nav-item {
+    font-family: var(--Montserrat);
+}
+
+.landing__title,
+.about__title,
+.portfoliopage__title, .resume__title, .contact__title {
+    font-size: 2.5rem;
 }
 
 /* HEADER AND NAV STYLING*/
@@ -62,7 +68,6 @@ h4, h5, h6 {
 .portfolio__nav-item {
     font-size: 1.5rem;
     margin: 0 2rem;
-    font-family:var(--Montserrat);
 }
 
 .portfolio-nav {
@@ -111,23 +116,9 @@ h4, h5, h6 {
 .portfolio-name-m{
     color:var(--second-accent-color);
 }
+
 /* LANDING*/
-.landing-headshot {
-    height: 480px;
-    width: 380px;
-    
-}
-.landing-headshot, .about-hero {
-    border-radius: 175px 175px 0 0;
-    box-shadow: 5px 10px var(--orange-highlight);
-}
-
-.landing-headshot:hover,
-.portfolio__nav-button:hover, .about-hero:hover {
-    box-shadow: 10px 10px var(--orange-highlight);
-    transition: 0.4s;
-}
-
+/* Layout */
 .landing__wrapper {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -139,26 +130,38 @@ h4, h5, h6 {
     width: 40%;
 }
 
-.landing__title,
-.about__title,
-.portfoliopage__title, .resume__title, .contact__title {
-    font-size: 2.5rem;
+.landing__blurb,
+.about__blurb {
+    margin-bottom:1rem;
 }
 
-.landing__name--color,
-.landing__job-title--color {
-    color: var(--main-accent-color);
+.landing-headshot {
+    height: 480px;
+    width: 380px;
 }
 
+/*Typography*/
 .landing__subtitle {
     font-size: 1.5rem;
     text-indent: 2rem;
     margin: 1rem 0;
 }
 
-.landing__blurb,
-.about__blurb {
-    margin-bottom:1rem;
+/*Visual */
+.landing-headshot, .about-hero {
+    border-radius: 175px 175px 0 0;
+    box-shadow: 5px 10px var(--orange-highlight);
+}
+
+.landing-headshot:hover,
+.portfolio__nav-button:hover, .about-hero:hover {
+    box-shadow: 10px 10px var(--orange-highlight);
+    transition: 0.4s;
+}
+
+.landing__name--color,
+.landing__job-title--color {
+    color: var(--main-accent-color);
 }
 
 /* ABOUT*/
@@ -323,13 +326,15 @@ ul {
 .contact-form__container{
     background-color:var(--form-background-color);
     width:25rem;
-    height:30rem;
+    height:33rem;
     border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-form__title{
     text-align: center;
     font-size:1.5rem;
-    color:var(--form-text-color);
     margin: 1rem 0;
 }
 #contact-form{
@@ -351,22 +356,25 @@ ul {
 #contact-form > textarea{
     resize:none;
     height:10rem;
+    
 }
 #contact-form > textarea, #contact-form > input{
-    text-indent:0.7rem;
+    text-indent:1.25rem;
+    width:100%;
+    margin: 1rem 0;
+    padding:0.5rem;
 }
 #contact-form > label{
     align-self:flex-start;
-    color:var(--form-text-color);
     font-weight:bolder;
 }
 #contact-form{
-    margin: 0 4.5rem;
+    margin: 0 3.5rem;
 }
 .contactForm__button{
-    width: 40%;
+    width: 50%;
     align-self:flex-end;
-    height:2rem;
+    padding:1rem 0;
     background-color: var(--form-button-color);
     color:var(--form-text-color);
 }
@@ -547,7 +555,7 @@ footer {
     }
     .contact-form__container{
         width:23rem;
-        height:28rem;
+        /* height:28rem; */
     }
     #contact-form{
         margin: 0 1.5rem;
