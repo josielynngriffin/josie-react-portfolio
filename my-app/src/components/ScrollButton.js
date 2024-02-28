@@ -1,6 +1,12 @@
-import React, {useState, useEffect} from 'react';
-
+import React, {useState,  useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
 function ScrollButton() {
+    const location = useLocation();
+  
+    // Function to check if the current path is the contact page
+    const isContactPage = location.pathname === '/contact';
+    
+
     const [isVisible, setIsVisible] = useState(false);
     const [isAtEnd, setIsAtEnd] = useState(false);
     const toggleVisibility = () =>{
@@ -29,7 +35,8 @@ function ScrollButton() {
             window.removeEventListener("scroll", toggleVisibility);
         };
     }, []);
-    return (
+    //Only render if current page is not the contact page
+    return !isContactPage &&(
         <button className="scrollButton" onClick={scrollToTop} style={{display: isVisible ? 'block' : 'none', bottom: isAtEnd ? '10rem' : '2rem', right: '1rem'}}>
             <i class="fa-solid fa-arrow-up"></i>
         </button>
