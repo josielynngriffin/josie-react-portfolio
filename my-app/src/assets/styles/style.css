@@ -5,7 +5,7 @@
     --background-color: #F5F5F5;
     --form-background-color:#B4B898 ;
     --form-button-color:#5A6445 ;
-    --orange-highlight: #BA602D;
+    --orange-highlight: #CD6B34;
     --main-accent-color: #5A6445;
     --second-accent-color: #B4B898;
     --form-text-color: #F5F5F5;
@@ -14,7 +14,7 @@
 body {
     font-family: var(--Roboto);
     background-color: var(--background-color);
-    font-size: 1.25rem;
+    font-size: 1.25rem; 
 }
 
 .App {
@@ -33,7 +33,9 @@ h1, h2, h3, .footer__name {
 h4, h5, h6,.portfolio__nav-item {
     font-family: var(--Montserrat);
 }
-
+p{
+    line-height:1.5rem;
+}
 .landing__title,
 .about__title,
 .portfoliopage__title, .resume__title, .contact__title {
@@ -42,12 +44,12 @@ h4, h5, h6,.portfolio__nav-item {
 
 /* SCROLL TO TOP BUTTON */
 .scrollButton{
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
+    display: none; 
+    position: fixed; 
     bottom: 2rem; 
     right: 3rem; 
     z-index: 99; 
-    padding: 15px; /* Some padding */
+    padding: 15px; 
     border-radius: 15px 15px 0 0;
     border: none; 
     cursor: pointer;
@@ -68,7 +70,7 @@ h4, h5, h6,.portfolio__nav-item {
     justify-content: space-between;
     height: 5rem;
     align-items: center;
-    margin: 4rem 4rem;
+    margin: 2rem 4rem;
     cursor: pointer;
 }
 .active {
@@ -90,7 +92,7 @@ h4, h5, h6,.portfolio__nav-item {
     font-size: 1.5rem;
     margin: 0 2rem;
 }
-.portfolio__nav-item:hover, .portfolio-name__span:hover {
+.portfolio__nav-item:hover{
     font-weight: 700;
     transition: 0.4s;
 }
@@ -306,7 +308,7 @@ h4, h5, h6,.portfolio__nav-item {
 .portfolio__project--description {
     background-color: var(--form-button-color);
     color: var(--background-color);
-    padding: 1rem 1rem;
+    padding: 1.5rem;
     margin: 1rem 0;
 }
 
@@ -440,7 +442,7 @@ footer {
 
 .footer__name {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin:0;
     color: var(--main-accent-color);
 }
 
@@ -454,10 +456,11 @@ footer {
     width: 30%;
     height: 2.5px;
     border-width: 0;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
 }
 .footer__contact{
     display:flex;
+    margin:0.5rem;
 }
 /*MEDIA QUERIES*/
 @media (max-width: 1200px) {
