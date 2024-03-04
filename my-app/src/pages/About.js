@@ -2,8 +2,9 @@ import React from 'react';
 import aboutHero from '../assets/images/about-photo.png';
 
 function About() {
-    const skills=['JavaScript', 'MongoDB', 'SQL', 'React','Accessibility', 'UI Design', 'Branding', 'User Testing', 'Prototyping'
-    ]
+    const skills=['CSS', 'JavaScript', 'MongoDB', 'SEO', 'Accessibility', 'MySQL', 'React', 'Express.js', 'APIs'
+    ];
+    const uxSkills=['UI Design', 'User Research', 'User Testing', 'Prototyping', 'Visual Branding', 'Information Architecture', 'Design Systems', 'Figma','Miro'];
     return (
         <div className="about-page__wrapper">
             <section className="about-hero__wrapper">
@@ -21,15 +22,26 @@ function About() {
             </section>
             <section className="skills__wrapper">
                 <h2 className="about__title skills__title"><span className="title__break">|</span>  skills</h2>
-                <ul class="skills__list">
-                
-                    {skills.map((skill) => {
-                        return (
-                            <li className="skill__container">{skill}</li>
-                        )
-                    })}
-                </ul>
-
+                <section class="skills__card skills__card-web">
+                    <h3 className="skills__card-title">web dev</h3>
+                    <ul class="skills__list">
+                        {skills.map((skill) => {
+                            return (
+                                <li className="skill__container">{skill}</li>
+                            )
+                        })}
+                    </ul>
+                </section>
+                <section class="skills__card skills__card-dev">
+                    <h3 className="skills__card-title">ux/ui</h3>
+                    <ul class="skills__list">
+                        {uxSkills.map((uxSkill) => {
+                            return (
+                                <li className="skill__container">{uxSkill}</li>
+                            )
+                        })}
+                    </ul>
+                </section>
             </section>
         </div>
     );
