@@ -8,7 +8,7 @@ function About() {
     return (
         <div className="about-page__wrapper">
             <section className="about-hero__wrapper">
-                <img className="about-hero" src={aboutHero} alt="."/>
+                <img className="about-hero" src={aboutHero} alt="Several self-portrait illustrations of Josie in three different mediums."/>
             </section>
             <section className="about__wrapper">
                 <h1 className="about__title"><span className="title__break">|</span> about me</h1>
