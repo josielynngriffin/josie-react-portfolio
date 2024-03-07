@@ -15,7 +15,7 @@ function WebDevProjects({projects}) {
                                 <p className="portfolio__project--description">{project.description}</p>
                                 <ul className="project__skills--list">
                                     {project.skills.map((skill, skillIndex) => (
-                                        <li key={skillIndex}>{skill}</li>
+                                        <li className="label-text" key={skillIndex}>{skill}</li>
                                     ))}
                                 </ul>
                                 <section>

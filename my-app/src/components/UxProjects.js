@@ -17,7 +17,7 @@ function UxProjects({uxProjects}) {
                                 <p className="portfolio__project--description">{uxProject.description}</p>
                                 <ul className="project__skills--list">
                                     {uxProject.skills.map((skill, skillIndex) => (
-                                        <li key={skillIndex}>{skill}</li>
+                                        <li className="label-text" key={skillIndex}>{skill}</li>
                                     ))}
                                 </ul>
                                 <section>

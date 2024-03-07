@@ -8,7 +8,7 @@ function ProjectIntroCS({project}) {
                 <h1 className="caseStudy__title">{project.csName}</h1>
                 <ul className="project__skills--list">
                     {project.skills.map((skill, skillIndex) => (
-                        <li key={skillIndex}>{skill}</li>
+                        <li className="label-text" key={skillIndex}>{skill}</li>
                     ))}
                 </ul>
                 <p>{project.description}</p>
