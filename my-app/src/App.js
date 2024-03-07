@@ -110,7 +110,7 @@ function App() {
       image:BloomerImg,
       imgAlt:'Mockup of Bloomer, showcasing various mobile wireframes of a plant care app on a light green background.',
       description:"Redefine your plant care experience with Bloomer! Gamify your green thumb with streaks, build your plant collection, and watch your plants thrive like never before.",
-      skills: ['UX Research -', 'UI Design -', 'User Testing'],
+      skills: ['UX Research', 'UI Design', 'User Testing'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
     {
@@ -121,7 +121,7 @@ function App() {
       image:FWSImg,
       imgAlt:'Mockup of the Fish & Wildlife completed homepage redesign on a yellow background.',
       description:"Revitalize a government organization's digital footprint to streamline access to vital information and resources!",
-      skills: ['UX Research -', 'Information Architecture -', 'Responsive Web Design'],
+      skills: ['UX Research', 'Information Architecture', 'Responsive Web Design'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
     {
@@ -131,8 +131,8 @@ function App() {
       link:"/lccr",
       image:LCCRImg,
       imgAlt:'Mockup of the Loving Care Cat Rescue design across a phone and laptop on a lavender background.',
-      description:"Help a local cat rescue rebuild their brand identity, create a dynamic donation experience, and transform usability barriers into an engaging design solution.",
-      skills: ['UX Research -', 'Branding Identity -', 'Responsive Web Design'],
+      description:"Help a local cat rescue rebuild their brand identity, create a dynamic donation experience, and transform usability barriers into an engaging design",
+      skills: ['UX Research', 'Branding Identity', 'Responsive Web Design'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
   ];
