@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 //Page Imports
@@ -8,6 +8,9 @@ import Contact from './pages/Contact.js';
 import Portfolio from './pages/Portfolio.js';
 import UXPortfolio from './pages/UXPortfolio.js';
 import Resume from './pages/Resume.js';
+import Bloomer from './pages/Bloomer.js';
+import FWS from './pages/FWS.js';
+import LCCR from './pages/LCCR.js';
 
 //Component Imports
 import Header from './components/Header.js';
@@ -22,9 +25,9 @@ import Workday from './assets/images/workday-screenshot.png';
 import Jate from './assets/images/jate-screenshot.png';
 import Notes from './assets/images/notes-screenshot.png';
 import Feev from './assets/images/feev-screenshot.png';
-import LCCR from './assets/images/lccr-project-preview.png';
-import FWS from './assets/images/fws-project-preview.png';
-import Bloomer from './assets/images/bloomer-project-preview.png';
+import LCCRImg from './assets/images/lccr-project-preview.png';
+import FWSImg from './assets/images/fws-project-preview.png';
+import BloomerImg from './assets/images/bloomer-project-preview.png';
 
 //Asset Imports
 import './assets/styles/reset.css';
@@ -101,27 +104,36 @@ function App() {
   const uxProjects = [
     {
       name:"Bloomer - A Plant Care App",
-      link:"/about",
-      image:Bloomer,
+      csName:"Bloomer",
+      roles: "UX Researcher & UI Designer",
+      link:"/bloomer",
+      image:BloomerImg,
       imgAlt:'Mockup of Bloomer, showcasing various mobile wireframes of a plant care app on a light green background.',
-      description:"This plant care app case study exemplifies a holistic approach to user-centered design, from meticuluous research to iterative prototyping. By staying attuned to user needs, embracing collaboration, and consistently iterating, we delivered a concept that promises to redefine the plant care experience.",
+      description:"Redefine your plant care experience with Bloomer! Gamify your green thumb with streaks, build your plant collection, and watch your plants thrive like never before.",
       skills: ['UX Research -', 'UI Design -', 'User Testing'],
+      tools: 'Figma, Trello, Miro, Zoom',
     },
     {
       name:"U.S. Fish & Wildlife - Government Redesign",
-      link:"/about",
-      image:FWS,
+      csName:"U.S. Fish & Wildlife Redesign",
+      roles: "UX Researcher & UI Designer",
+      link:"/fws",
+      image:FWSImg,
       imgAlt:'Mockup of the Fish & Wildlife completed homepage redesign on a yellow background.',
-      description:"This redesign project for the U.S Fish & Wildlife Services website was a comprehensive undertaking aimed at revitalizing the organization's online presence. By addressing user pain points, optimizing information architecture, and prioritizing responsive design, this project resulted in a user-friendly and visually engaging platform.",
-      skills: ['UX Research -', 'Branding Identity -', 'Responsive Web Design'],
+      description:"Revitalize a government organization's digital footprint to streamline access to vital information and resources!",
+      skills: ['UX Research -', 'Information Architecture -', 'Responsive Web Design'],
+      tools: 'Figma, Trello, Miro, Zoom',
     },
     {
       name:"Loving Care Cat Rescue - Nonprofit Redesign",
-      link:"/about",
-      image:LCCR,
+      csName: "Loving Care Cat Rescue Redesign",
+      roles: "UX Researcher & UI Designer",
+      link:"/lccr",
+      image:LCCRImg,
       imgAlt:'Mockup of the Loving Care Cat Rescue design across a phone and laptop on a lavender background.',
-      description:"The Loving Care Cat Rescue website redesign aimed to create a more user-friendly, engaging, and mission-driven online experience. Through meticulous research, ideation, and iterative prototyping, the project successfully addressed usability barriers and enhanced the overall visual and interactive appeal of the website.",
+      description:"Help a local cat rescue rebuild their brand identity, create a dynamic donation experience, and transform usability barriers into an engaging design solution.",
       skills: ['UX Research -', 'Branding Identity -', 'Responsive Web Design'],
+      tools: 'Figma, Trello, Miro, Zoom',
     },
   ];
 
@@ -134,6 +146,9 @@ function App() {
           <Route path='/' element={<Landing/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
+          <Route path='/bloomer' element={<Bloomer uxProjects={uxProjects} projectIndex={0}/>}/>
+          <Route path='/fws' element={<FWS uxProjects={uxProjects} projectIndex={1}/>}/>
+          <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={2}/>}/>
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
