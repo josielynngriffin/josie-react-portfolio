@@ -39,13 +39,25 @@ p, li{
 }
 .landing__title,
 .about__title,
-.portfoliopage__title, .resume__title, .contact__title {
-    font-size: 2.5rem;
+.portfoliopage__title, .resume__title, .contact__title, .caseStudy__title {
+    font-size: 3rem;
+}
+h2{
+    font-size:2.25rem;
 }
 h3 {
     font-size:2rem;
 }
-
+h4 {
+    font-size:1.75rem;
+}
+.small-text, .label-text{
+    font-size: .9rem;
+}
+.label-text{
+    font-weight:700;
+    text-transform: uppercase;
+}
 /* SCROLL TO TOP BUTTON */
 .scrollButton{
     display: none; 
@@ -321,10 +333,9 @@ h3 {
     margin: 1rem 0;
 }
 
-.project__skills--list {
+.project__skills--list, .caseStudy__skills--list {
     display: flex;
     flex-flow:row wrap;
-  
 }
 
 .project__skills--list>li {
@@ -332,7 +343,7 @@ h3 {
 }
 
 ul {
-    padding-left:0;
+    padding:0;
 }
 .portfolio-case__link{
     color: var(--orange-highlight);
@@ -347,6 +358,32 @@ ul {
     font-weight:bolder;
     font-size:1.5rem;
 }
+/*CASE STUDY*/
+.case-study__wrapper{
+    margin:4rem;
+}
+/*INTRO*/
+.projectIntroCS__wrapper{
+    display:flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.projectIntro--text-wrap{
+    margin:1rem;
+    /* flex-basis:43%; */
+    min-width:40%;
+    width:40%;
+}
+
+.projectIntro--image{
+    border-radius: 50px ;
+    width: 600px;
+    height: auto;
+    flex-grow:1;
+}
+
 /*CONTACT*/
 .contact-page__wrapper{
     display:flex;
@@ -476,6 +513,9 @@ footer {
     .portfolio__project--info, .portfolio__project--info-even {
         width: 600px;
     }
+    .projectIntro--text-wrap{
+        flex-grow:1;
+    }
 }
 .portfolio__project--info{
     align-items:flex-start;
@@ -521,7 +561,7 @@ footer {
     .portfolio__project--info{
         align-items:flex-start;
     }
-    .about-page__wrapper{
+    .about-page__wrapper, .case-study__wrapper{
         margin:0 5%;
     }
     .contact__blurb{
@@ -570,7 +610,7 @@ footer {
         height: 460px;
         width: 360px;
     }
-    .about-page__wrapper{
+    .about-page__wrapper, .projectIntroCS__wrapper{
         margin:0rem;
     }
 
@@ -610,6 +650,9 @@ footer {
     .scrollButton{
         bottom:1rem;
         right:1rem;
+    }
+    .projectIntro--text-wrap{
+        margin: 1rem 0;
     }
 }
 
