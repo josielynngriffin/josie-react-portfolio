@@ -57,6 +57,7 @@ h4 {
 .label-text{
     font-weight:700;
     text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 /* SCROLL TO TOP BUTTON */
 .scrollButton{
@@ -368,22 +369,37 @@ ul {
     flex-flow: row wrap-reverse;
     justify-content: center;
     align-items: center;
+}
+.rightCS__wrapper, .leftCS__wrapper{
+    align-self: start;
+    
+}
+.rightCS__wrapper{
+    flex-flow: row wrap;
+}
+.leftCS__wrapper{
+    flex-flow: row-reverse wrap;
+}
+.case-study__component--margin{
     margin: 1rem;
 }
 .projectIntro--text-wrap{
     margin:1rem;
-    /* flex-basis:43%; */
     min-width:40%;
     width:40%;
 }
-
-.projectIntro--image{
+.projectIntro--image, .imgDescription{
     border-radius: 50px ;
     width: 600px;
     height: auto;
     flex-grow:1;
 }
-
+.imgDescription{
+    margin:0.5rem 0;
+}
+.case-study-text{
+    margin:2rem 0;
+}
 /*CONTACT*/
 .contact-page__wrapper{
     display:flex;
@@ -603,6 +619,9 @@ footer {
     .skills__card{
         margin:1rem;
     }
+    .projectIntro--image, .imgDescription{
+        width:100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -610,7 +629,7 @@ footer {
         height: 460px;
         width: 360px;
     }
-    .about-page__wrapper, .projectIntroCS__wrapper{
+    .about-page__wrapper, .case-study__component--margin{
         margin:0rem;
     }
 
