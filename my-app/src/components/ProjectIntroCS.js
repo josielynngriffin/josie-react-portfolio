@@ -3,7 +3,7 @@ import React from 'react';
 function ProjectIntroCS({project}) {
     
     return (
-        <div className="projectIntroCS__wrapper">
+        <div className="projectIntroCS__wrapper case-study__component--margin">
             <section className="projectIntro--text-wrap">
                 <h1 className="caseStudy__title">{project.csName}</h1>
                 <ul className="project__skills--list">
@@ -11,7 +11,7 @@ function ProjectIntroCS({project}) {
                         <li className="label-text" key={skillIndex}>{skill}</li>
                     ))}
                 </ul>
-                <p>{project.description}</p>
+                <p className="case-study-text">{project.description}</p>
                 <p className="label-text">Design Role</p>
                 <p>{project.roles}</p>
                 <p className="label-text">Timeline</p>
