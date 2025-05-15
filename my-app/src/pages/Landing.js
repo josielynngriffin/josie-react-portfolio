@@ -1,5 +1,5 @@
 import React from 'react';
-import headshot from '../assets/images/lightmode.png';
+import headshot from '../assets/images/lightmode-headshot.png';
 
 function Landing() {
     //console.log(props);
