@@ -38,7 +38,7 @@ function Contact() {
                         <label htmlFor="message">your message *
                         <textarea class="contact-form__textarea" name="message" rows="5" defaultValue={message} onChange={handleChange} placeholder='message me about anything!' /></label>
                     
-                        <button className="contactForm__button" type="submit">submit</button>
+                        <button className="contactForm__button" type="submit">submit<i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>
             </section>
