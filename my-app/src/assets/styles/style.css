@@ -49,7 +49,7 @@ h3 {
     font-size:2rem;
 }
 h4 {
-    font-size:1.75rem;
+    font-size:1.5rem;
 }
 .small-text, .label-text{
     font-size: .9rem;
@@ -362,6 +362,9 @@ ul {
 /*CASE STUDY*/
 .case-study__wrapper{
     margin:4rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
 }
 /*INTRO*/
 .projectIntroCS__wrapper{
@@ -369,12 +372,13 @@ ul {
     flex-flow: row wrap-reverse;
     justify-content: center;
     align-items: center;
+    width:100%;
 }
 .rightCS__wrapper, .leftCS__wrapper{
-    align-self: start;
-    
+    align-self: start; 
 }
-.rightCS__wrapper{
+
+.fullCS__wrapper, .rightCS__wrapper{
     flex-flow: row wrap;
 }
 .leftCS__wrapper{
@@ -388,17 +392,43 @@ ul {
     min-width:40%;
     width:40%;
 }
+
+.fullCS--text-wrap{
+    width: 75%;
+    justify-self: start;
+    align-items: start;
+}
+.projectIntro--image-main{
+    width:600px;
+    height:auto;
+    flex-grow:1;
+    border-radius:50px;
+}
+/* .projectIntro--image-wrap{
+    width:35%;
+    margin:1rem;
+    flex:1 0 auto;
+} */
 .projectIntro--image, .imgDescription{
     border-radius: 50px ;
-    width: 600px;
+    width:100%;
     height: auto;
     flex-grow:1;
+}
+.fullCS--image-wrap{
+    width: 75%;
+}
+.fullCS--image{
+    width:100%;
+    height:auto;
+    border-radius: 50px ;
+    justify-self: center;
 }
 .imgDescription{
     margin:0.5rem 0;
 }
 .case-study-text{
-    margin:2rem 0;
+    margin:0.5rem 0;
 }
 /*CONTACT*/
 .contact-page__wrapper{
