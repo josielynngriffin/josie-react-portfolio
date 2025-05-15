@@ -16,11 +16,11 @@ function About() {
                 <p className="about__blurb">I love design and anything related to art and communication. I approach problems in a rational and flexible way, seeking the simplest and most functional solutions to create pivotal moments online.</p>
             </section>
             <section className="moreabout__wrapper">
-                <h1 className="about__title"><span className="title__break">|</span> more about me</h1>
+                <h2><span className="title__break">|</span> more about me</h2>
                 <p className="about__blurb">Outside of development, I love to spend time in the kitchen, get outdoors, and read! I am always trying to learn new things.</p>
             </section>
             <section className="skills__wrapper">
-                <h2 className="about__title skills__title"><span className="title__break">|</span>  skills</h2>
+                <h2 className="skills__title"><span className="title__break">|</span>  skills</h2>
                 <section class="skills__card skills__card-web">
                     <h3 className="skills__card-title">web dev</h3>
                     <ul class="skills__list">
