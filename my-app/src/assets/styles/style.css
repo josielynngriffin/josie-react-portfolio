@@ -13,9 +13,9 @@
 }
 /*GENERAL */
 body {
-    font-family: var(--NunitoSans);
+    font-family: var(--Montserrat);
     background-color: var(--background-color);
-    font-size: 1.25rem; 
+    font-size: 1.05rem; 
 }
 
 .App {
@@ -40,16 +40,16 @@ p, li{
 .landing__title,
 .about__title,
 .portfoliopage__title, .resume__title, .contact__title, .caseStudy__title {
-    font-size: 3rem;
+    font-size: 2.875rem;
 }
 h2{
-    font-size:2.25rem;
-}
-h3 {
     font-size:2rem;
 }
+h3 {
+    font-size:1.875rem;
+}
 h4 {
-    font-size:1.5rem;
+    font-size:1.25rem;
 }
 .small-text, .label-text{
     font-size: .9rem;
@@ -96,7 +96,7 @@ h4 {
 .portfolio-name {
     font-family:var(--Roca);
     font-size: 2.5rem;
-    font-weight:700;
+    font-weight:600;
     color: var(--main-accent-color);
     
 }
@@ -110,7 +110,7 @@ h4 {
     margin: 0 2rem;
 }
 .portfolio__nav-item:hover{
-    font-weight: 700;
+    font-weight: 600;
     transition: 0.4s;
 }
 .portfolio-nav {
@@ -130,7 +130,7 @@ h4 {
 .portfolio__nav-button:hover {
     background-color: var(--second-accent-color);
     transition: 0.4s;
-    font-weight: 700;
+    font-weight: 600;
     color:black;
 }
 
@@ -188,7 +188,7 @@ h4 {
 /*Typography*/
 .landing__subtitle {
     font-size: 1.5rem;
-    text-indent: 2rem;
+    text-indent: 1rem;
     margin: 1rem 0;
 }
 
@@ -199,7 +199,7 @@ h4 {
 }
 
 .landing-headshot:hover,
-.portfolio__nav-button:hover, .about-hero:hover, .scrollButton:hover {
+.portfolio__nav-button:hover, .about-hero:hover, .scrollButton:hover, .contactForm__button:hover {
     box-shadow: 10px 10px var(--orange-highlight);
     transition: 0.4s;
 }
@@ -437,7 +437,10 @@ ul {
     justify-content:center;
 }
 .contact__title{ 
-    margin: 1rem 0;
+    margin: 2rem 0;
+}
+.contact-form__title{
+    font-size:1.5rem;
 }
 .contact__blurb{
     width:40%;
@@ -446,51 +449,43 @@ ul {
 .contact-form__container{
     background-color:var(--form-background-color);
     width:30rem;
-    height:33rem;
+    height:auto;
     border-radius: 50px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
-.contact-form__title{
-    text-align: center;
-    font-size:1.5rem;
-    margin: 1rem 0;
-}
+
 #contact-form{
     display:flex;
     flex-flow:column nowrap;
     align-items:center;
     width:100%;
+    gap:1rem;
+    margin: 0 3.5rem;
+    padding: 2rem 0;
 }
-#contact-form > div{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    width:100%;
-}
-.contactForm__button, #contact-form > input, #contact-form > textarea {
+
+.contactForm__button, .contact-form__textarea, .contact-form__input {
     border:none;
     border-radius:30px;
-    margin:0.75rem;
 }
-#contact-form > textarea{
+.contact-form__textarea{
     resize:none;
     height:10rem;
-    
 }
-#contact-form > textarea, #contact-form > input{
+.contact-form__textarea, .contact-form__input{
     text-indent:1.25rem;
     width:100%;
-    margin: 1rem 0;
+    margin-top: 0.75rem;
     padding:0.5rem;
+    font-family: var(--Montserrat);
 }
-#contact-form > label{
+#contact-form > label, .contact-form__title{
     align-self:flex-start;
-    font-weight:bolder;
-}
-#contact-form{
-    margin: 0 3.5rem;
+    font-weight:600;
+    width:100%;
+    font-family: var(--Roca);
 }
 .contactForm__button{
     width: 50%;
@@ -500,9 +495,8 @@ ul {
     color:var(--form-text-color);
 }
 .contactForm__button:hover{
-    width:55%;
-    font-weight: 700;
-    transition: 0.5s;
+    font-weight: 600;
+    transition: 0.4s;
     background-color:#515A3D;
 }
 /*RESUME*/
@@ -688,7 +682,6 @@ footer {
     }
     .contact-form__container{
         width:23rem;
-        /* height:28rem; */
     }
     #contact-form{
         margin: 0 1.5rem;
