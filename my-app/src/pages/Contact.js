@@ -8,36 +8,35 @@ function Contact() {
         setFormState({...formState, [e.target.name]: e.target.value })
       }
       
-      console.log(formState);
+      /*console.log(formState);
 
       function handleSubmit(e) {
-        e.preventDefault();
+        //e.preventDefault();
         console.log(formState);
-      }
+      }*/
     return (
         <div className="contact-page__wrapper">
             <section className="contact__blurb">
                 <h1 className="contact__title"><span className="title__break">|</span> contact me</h1>
-                <p>i’m always looking for more opportunities and to connect! get in touch with me anytime or follow my development on my socials below :) </p>
-                <a href="https://github.com/josielynngriffin" target="_blank"><i className="portfolio__icon fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/josiegriffin/" target="_blank"><i className="portfolio__icon fa-brands fa-linkedin"></i></a>
-                <a href="mailto: jelynngriffin@gmail.com" target="_blank"><i className="portfolio__icon fa-solid fa-envelope"></i></a>
+                <p>I’m always interested in chatting through design challenges, sharing insights, and opportunities to collaborate!</p>
+                <p>Get in touch with me by sending a message, connect with me on LinkedIn, or follow my development on GitHub :) </p>
+                <a href="https://github.com/josielynngriffin"><i className="portfolio__icon fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/josiegriffin/"><i className="portfolio__icon fa-brands fa-linkedin"></i></a>
+                <a href="mailto: jelynngriffin@gmail.com" target="_blank" rel="noreferrer"><i className="portfolio__icon fa-solid fa-envelope"></i></a>
 
 
             </section>
             <section className="contact-form__container">
-                <form id="contact-form" action="form-process.php" onSubmit={handleSubmit}>
+                <form id="contact-form" action="https://formspree.io/f/mdkgyjjn" method="POST">
+                        <h2 class="contact-form__title">send me a message!</h2>
+                        <label htmlFor="name">name
+                        <input class="contact-form__input" type='text' name="name" defaultValue={name} onChange={handleChange} placeholder='first last'/> </label>
                     
-                        <label htmlFor="name">name</label>
-                        <input type='text' name="name" defaultValue={name} onChange={handleChange} placeholder='first last'/> 
+                        <label htmlFor="email">email *
+                        <input class="contact-form__input" type="email" name="email" defaultValue={email} onChange={handleChange} placeholder='your@gmail.com'/></label>
                     
-
-                    
-                        <label htmlFor="email">email *</label>
-                        <input type="email" name="email" defaultValue={email} onChange={handleChange} placeholder='your@gmail.com'/>
-                    
-                        <label htmlFor="message">your message *</label>
-                        <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} placeholder='message me about anything!' />
+                        <label htmlFor="message">your message *
+                        <textarea class="contact-form__textarea" name="message" rows="5" defaultValue={message} onChange={handleChange} placeholder='message me about anything!' /></label>
                     
                         <button className="contactForm__button" type="submit">submit</button>
 
