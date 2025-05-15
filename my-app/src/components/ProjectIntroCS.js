@@ -20,7 +20,7 @@ function ProjectIntroCS({project}) {
                 <p>{project.tools}</p>
             </section>
             <section className="projectIntro--image-wrap">
-                <img  className=" projectIntro--image-main" src={project.image} alt={project.imgAlt}></img>
+                <img  className="projectIntro--image-main" src={project.image} alt={project.imgAlt}></img>
             </section>
         </div>
     );
