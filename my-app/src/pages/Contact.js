@@ -30,13 +30,13 @@ function Contact() {
                 <form id="contact-form" action="https://formspree.io/f/mdkgyjjn" method="POST">
                         <h2 class="contact-form__title">send me a message!</h2>
                         <label htmlFor="name">name
-                        <input class="contact-form__input" type='text' name="name" defaultValue={name} onChange={handleChange} placeholder='first last'/> </label>
+                        <input class="contact-form__input" type='text' name="name" defaultValue={name} onChange={handleChange} placeholder='first last' required/> </label>
                     
                         <label htmlFor="email">email *
-                        <input class="contact-form__input" type="email" name="email" defaultValue={email} onChange={handleChange} placeholder='your@gmail.com'/></label>
+                        <input class="contact-form__input" type="email" name="email" defaultValue={email} onChange={handleChange} placeholder='your@gmail.com' required/></label>
                     
                         <label htmlFor="message">your message *
-                        <textarea class="contact-form__textarea" name="message" rows="5" defaultValue={message} onChange={handleChange} placeholder='message me about anything!' /></label>
+                        <textarea class="contact-form__textarea" name="message" rows="5" defaultValue={message} onChange={handleChange} placeholder='message me about anything!' required /></label>
                     
                         <button className="contactForm__button" type="submit">submit<i class="fa-solid fa-paper-plane"></i></button>
 
