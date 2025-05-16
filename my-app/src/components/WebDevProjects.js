@@ -19,8 +19,8 @@ function WebDevProjects({projects}) {
                                     ))}
                                 </ul>
                                 <section>
-                                    <a href={project.githubLink} target="_blank"><i className="portfolio__icon fa-brands fa-github"></i></a>
-                                    <a href={project.liveLink} target="_blank"><i className="portfolio__icon fa fa-solid fa-arrow-up-right-from-square"></i></a> 
+                                    <a href={project.githubLink} target="_blank" rel="noreferrer"><i className="portfolio__icon fa-brands fa-github"></i></a>
+                                    <a href={project.liveLink} target="_blank" rel="noreferrer"><i className="portfolio__icon fa fa-solid fa-arrow-up-right-from-square"></i></a> 
                                 </section>
                                
                             </div>
