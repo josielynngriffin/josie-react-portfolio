@@ -3,7 +3,7 @@ import React from 'react';
 function ProjectIntroCS({project}) {
     
     return (
-        <div className="projectIntroCS__wrapper case-study__component--margin">
+        <div className="projectIntroCS__wrapper CS-component__wrapper case-study__padding">
             <section className="projectIntro--text-wrap">
                 <h1 className="caseStudy__title">{project.csName}</h1>
                 <ul className="project__skills--list">
@@ -20,7 +20,7 @@ function ProjectIntroCS({project}) {
                 <p>{project.tools}</p>
             </section>
             <section className="projectIntro--image-wrap">
-                <img  className="projectIntro--image-main" src={project.image} alt={project.imgAlt}></img>
+                <img  className="projectIntro--image-main case-study-image__radius" src={project.image} alt={project.imgAlt}></img>
             </section>
         </div>
     );
