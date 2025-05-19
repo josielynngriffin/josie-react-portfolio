@@ -81,7 +81,7 @@ h4 {
     background-color: var(--second-accent-color);
 }
 
-.scrollButton:hover{
+.scrollButton:hover, .button__secondary:hover{
     background-color: var(--main-accent-color);
     color: white;
 }
@@ -138,6 +138,11 @@ h4 {
     font-weight: 600;
     color:black;
 }
+/*.portfolio__nav-button:hover {
+    background-color:#515A3D;
+    transition: 0.4s;
+    font-weight: 600;
+}*/
 
 .portfolio-name:hover,
 .portfolio__nav-icon:hover, .footer__name:hover {
@@ -508,15 +513,22 @@ ul {
     background-color: var(--form-button-color);
     color:var(--form-text-color);
 }
-.case-study__link{
-    width:45%;
-    flex: 1 1 285px;
-}
 .contactForm__button:hover{
     font-weight: 600;
     transition: 0.4s;
     background-color:#515A3D;
 }
+.case-study__link{
+    width:45%;
+    flex: 1 1 285px;
+}
+/*.button__secondary{
+    background-color: var(--second-accent-color);
+    color: black;
+}
+.button__secondary:hover{
+    background-color: var(--main-second-dark);
+}*/
 /*RESUME*/
 .resume__page{
     display:flex;
