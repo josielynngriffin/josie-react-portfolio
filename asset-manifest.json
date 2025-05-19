@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.04a81437.css",
-    "main.js": "./static/js/main.fd4f729e.js",
+    "main.css": "./static/css/main.c415497d.css",
+    "main.js": "./static/js/main.8c37135f.js",
     "static/js/592.7f72a991.chunk.js": "./static/js/592.7f72a991.chunk.js",
     "static/media/somniary-landing.png": "./static/media/somniary-landing.3c510a8cca03a69ad1b2.png",
     "static/media/weather-dashboard.png": "./static/media/weather-dashboard.72f3392af307f141dd03.png",
     "static/media/feev-screenshot.png": "./static/media/feev-screenshot.201d9c5b7bc5a5c8575e.png",
     "static/media/catterday-screenshot.png": "./static/media/catterday-screenshot.9c6ae445e9f862f6e087.png",
     "static/media/about-hero.png": "./static/media/about-hero.e085a98a58557b3b6f7b.png",
+    "static/media/cohabitat-preview-1.png": "./static/media/cohabitat-preview-1.a0f6ba9e9716a293de28.png",
     "static/media/lccr-project-preview.png": "./static/media/lccr-project-preview.cd0d5dd82496c79a4cbb.png",
     "static/media/fws-project-preview.png": "./static/media/fws-project-preview.bc4e7e56f612bbc8e27e.png",
     "static/media/bloomer-project-preview.png": "./static/media/bloomer-project-preview.99a492d49c3dc1538355.png",
@@ -17,12 +18,12 @@
     "static/media/notes-screenshot.png": "./static/media/notes-screenshot.04fa8ec6d1fe7faef6f2.png",
     "static/media/josie-griffin-resume.pdf": "./static/media/josie-griffin-resume.d034a36d6550c632b463.pdf",
     "index.html": "./index.html",
-    "main.04a81437.css.map": "./static/css/main.04a81437.css.map",
-    "main.fd4f729e.js.map": "./static/js/main.fd4f729e.js.map",
+    "main.c415497d.css.map": "./static/css/main.c415497d.css.map",
+    "main.8c37135f.js.map": "./static/js/main.8c37135f.js.map",
     "592.7f72a991.chunk.js.map": "./static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04a81437.css",
-    "static/js/main.fd4f729e.js"
+    "static/css/main.c415497d.css",
+    "static/js/main.8c37135f.js"
   ]
 }
