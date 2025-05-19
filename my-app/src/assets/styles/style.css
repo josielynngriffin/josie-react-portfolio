@@ -27,6 +27,9 @@ body {
 .portfolio-page__wrapper {
     min-height: 100vh;
     height: 100%;
+    max-width:100%;
+    width:100%;
+    /*margin: 0 10%;*/
 }
 h1, h2, h3, .footer__name {
     font-family: var(--Roca);
@@ -43,7 +46,7 @@ p, li{
     font-size: 2.875rem;
 }
 h2{
-    font-size:2rem;
+    font-size:2.25rem;
 }
 h3 {
     font-size:1.875rem;
@@ -58,6 +61,9 @@ h4 {
     font-weight:700;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+}
+.m-auto{
+    margin:auto;
 }
 /* SCROLL TO TOP BUTTON */
 .scrollButton{
@@ -98,7 +104,6 @@ h4 {
     font-size: 2.5rem;
     font-weight:600;
     color: var(--main-accent-color);
-    
 }
 .portfolio-name__span{
     font-weight:300;
@@ -360,76 +365,81 @@ ul {
     font-size:1.5rem;
 }
 /*CASE STUDY*/
-.case-study__wrapper{
-    margin:4rem;
+.case-study-image__radius{
+    border-radius:50px;
+}
+.case-study__wrapper{ 
     display:flex;
     flex-direction: column;
     gap:2rem;
 }
-/*INTRO*/
-.projectIntroCS__wrapper{
+.case-study__padding{
+    padding:4em 10%;
+}
+.case-study__bg{
+    background-color:#E9E8E8;
+}
+/* CS INTRO*/
+.CS-component__wrapper{
     display:flex;
-    flex-flow: row wrap-reverse;
-    justify-content: center;
-    align-items: center;
+    gap:1rem;
+    align-items: flex-start;
     width:100%;
 }
-.rightCS__wrapper, .leftCS__wrapper{
-    align-self: start; 
+.CS-component__list {
+    list-style:disc;
+    list-style-position: inside;
+    padding:0 1rem;
 }
-
 .fullCS__wrapper, .rightCS__wrapper{
     flex-flow: row wrap;
+}
+.leftCS__wrapper , .projectIntroCS__wrapper{
+    flex-flow:row wrap-reverse;
 }
 .leftCS__wrapper{
     flex-flow: row-reverse wrap;
 }
-.case-study__component--margin{
-    margin: 1rem;
-}
-.projectIntro--text-wrap{
-    margin:1rem;
-    min-width:40%;
-    width:40%;
+.projectIntro--image-main{
+    width:100%;
+    height:auto;
 }
 
-.fullCS--text-wrap{
-    width: 75%;
-    justify-self: start;
-    align-items: start;
+.projectIntro--text-wrap{
+    min-width:30%;
+    width:40%;
+    flex: 1 1 40%;
 }
-.projectIntro--image-main{
-    width:600px;
-    height:auto;
-    flex-grow:1;
-    border-radius:50px;
+.sideCS--image-wrap, .projectIntro--image-wrap{
+    flex: 1 1 575px;
 }
-/* .projectIntro--image-wrap{
-    width:35%;
-    margin:1rem;
-    flex:1 0 auto;
-} */
-.projectIntro--image, .imgDescription{
-    border-radius: 50px ;
+.sideCS--image{
     width:100%;
-    height: auto;
-    flex-grow:1;
+    height:auto;
 }
 .fullCS--image-wrap{
-    width: 75%;
-}
-.fullCS--image{
+    display:flex;
+    flex-direction: column;
     width:100%;
     height:auto;
-    border-radius: 50px ;
-    justify-self: center;
 }
+
 .imgDescription{
     margin:0.5rem 0;
 }
 .case-study-text{
     margin:0.5rem 0;
 }
+.case-study__button-wrap{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap:1rem;
+}
+
+
 /*CONTACT*/
 .contact-page__wrapper{
     display:flex;
@@ -498,6 +508,10 @@ ul {
     background-color: var(--form-button-color);
     color:var(--form-text-color);
 }
+.case-study__link{
+    width:45%;
+    flex: 1 1 285px;
+}
 .contactForm__button:hover{
     font-weight: 600;
     transition: 0.4s;
@@ -557,8 +571,12 @@ footer {
     .portfolio__project--info, .portfolio__project--info-even {
         width: 600px;
     }
-    .projectIntro--text-wrap{
-        flex-grow:1;
+    .case-study__padding {
+        padding: 0 5%;
+        margin:0;
+    }
+    .case-study__bg{
+        padding:2rem 5%;
     }
 }
 .portfolio__project--info{
@@ -605,7 +623,7 @@ footer {
     .portfolio__project--info{
         align-items:flex-start;
     }
-    .about-page__wrapper, .case-study__wrapper{
+    .about-page__wrapper{
         margin:0 5%;
     }
     .contact__blurb{
@@ -654,10 +672,12 @@ footer {
 
 @media (max-width: 600px) {
     .landing-headshot {
-        height: 460px;
-        width: 360px;
+        /*height: 460px;
+        width: 360px;*/
+        width:100%;
+        height:auto;
     }
-    .about-page__wrapper, .case-study__component--margin{
+    .about-page__wrapper, .portfolio-page__wrapper{
         margin:0rem;
     }
 
@@ -687,8 +707,8 @@ footer {
     .contact-form__container{
         width:23rem;
     }
-    #contact-form{
-        margin: 0 1.5rem;
+    #contact-form, .landing__image-wrap{
+        margin: 0rem 1.5rem;
     }
     .about-hero{
         border-radius:100px 100px 0 0;
@@ -706,5 +726,6 @@ footer {
     footer {
         width:100%;
         padding:0;
+        margin-top:2rem;
     }
 }
