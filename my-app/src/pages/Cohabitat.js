@@ -13,8 +13,8 @@ function Bloomer({ uxProjects, projectIndex}) {
         <div className="case-study__wrapper">
             <ProjectIntroCS project={project}/>
             <div className="case-study__button-wrap case-study__padding">
-                <a href="https://docs.google.com/presentation/d/10tjL9pGYk2IvpkpvJ8sUEMX4naRLw81RDVSPtdjjITc/edit?usp=sharing" className="contactForm__button case-study__link">Case study slidedeck here<i class="fa-solid fa-arrow-right"></i></a>
-                <a href="https://www.figma.com/proto/WAyLbgbDbbQ2woJVod3e6f/Group-Project-1---Josie%2C-Mac%2C-Vicki?type=design&node-id=409-1979&t=yTy9VoGQn2V0SpmN-1&scaling=scale-down&page-id=318%3A15121&starting-point-node-id=409%3A1979&mode=design" className="contactForm__button case-study__link">Full prototype here<i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://docs.google.com/presentation/d/1Ub0w1h1oIiMQwqN8_zuHRa2mXgfmvA-WpwcSSFG2uNo/edit?usp=sharing" className="contactForm__button case-study__link">Case study slidedeck here<i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://www.figma.com/proto/cUEp0424ReEasaQQHVjBpr/final-project?type=design&node-id=435-19607&t=mw4iZDE4rDUpP0M7-1&scaling=scale-down&page-id=103%3A335&starting-point-node-id=435%3A19607&mode=design" className="contactForm__button case-study__link">Full prototype here<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             {/* 
             <h2 className="m-auto"><span class ="title__break">|</span> research and definition</h2>

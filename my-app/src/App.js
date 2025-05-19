@@ -28,6 +28,7 @@ import Feev from './assets/images/feev-screenshot.png';
 import LCCRImg from './assets/images/lccr-project-preview.png';
 import FWSImg from './assets/images/fws-project-preview.png';
 import BloomerImg from './assets/images/bloomer-project-preview.png';
+import CohabitatImg from './assets/images/cohabitat-preview-1.png';
 
 //Asset Imports
 import './assets/styles/reset.css';
@@ -103,13 +104,13 @@ function App() {
 
   const uxProjects = [
     {
-      name:"Bloomer - A Plant Care App",
-      csName:"Bloomer",
+      name:"Cohabitat - An App for Roommates",
+      csName:"Cohabitat",
       roles: "UX Researcher & UI Designer",
-      link:"/bloomer",
-      image:BloomerImg,
-      imgAlt:'Mockup of Bloomer, showcasing various mobile wireframes of a plant care app on a light green background.',
-      description:"Redefine your plant care experience with Bloomer! Gamify your green thumb with streaks, build your plant collection, and watch your plants thrive like never before.",
+      link:"/cohabitat",
+      image:CohabitatImg,
+      imgAlt:'Mockup of Cohabitat, showcasing various mobile mockups of a roommate management app on an orange background.',
+      description:"Find harmony with your roommates with Cohabitat! Divvy up tasks, share expenses, and get rewarded for responsibility by creating a joyful home.",
       skills: ['UX Research', 'UI Design', 'User Testing'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
@@ -131,8 +132,19 @@ function App() {
       link:"/lccr",
       image:LCCRImg,
       imgAlt:'Mockup of the Loving Care Cat Rescue design across a phone and laptop on a lavender background.',
-      description:"Help a local cat rescue rebuild their brand identity, create a dynamic donation experience, and transform usability barriers into an engaging design",
+      description:"Help a local cat rescue rebuild their brand identity, create a dynamic donation experience, and transform usability barriers into an engaging design.",
       skills: ['UX Research', 'Branding Identity', 'Responsive Web Design'],
+      tools: 'Figma, Trello, Miro, Zoom',
+    },
+    {
+      name:"Bloomer - A Plant Care App",
+      csName:"Bloomer",
+      roles: "UX Researcher & UI Designer",
+      link:"/bloomer",
+      image:BloomerImg,
+      imgAlt:'Mockup of Bloomer, showcasing various mobile wireframes of a plant care app on a light green background.',
+      description:"Redefine your plant care experience with Bloomer! Gamify your green thumb with streaks, build your plant collection, and watch your plants thrive like never before.",
+      skills: ['UX Research', 'UI Design', 'User Testing'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
   ];
@@ -146,9 +158,10 @@ function App() {
           <Route path='/' element={<Landing/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
-          <Route path='/bloomer' element={<Bloomer uxProjects={uxProjects} projectIndex={0}/>}/>
+          <Route path='/cohabitat' element={<Bloomer uxProjects={uxProjects} projectIndex={0}/>}/> 
           <Route path='/fws' element={<FWS uxProjects={uxProjects} projectIndex={1}/>}/>
           <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={2}/>}/>
+          <Route path='/bloomer' element={<Bloomer uxProjects={uxProjects} projectIndex={3}/>}/>
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
