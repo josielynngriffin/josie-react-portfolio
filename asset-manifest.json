@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.232dab9b.css",
-    "main.js": "./static/js/main.4effb53d.js",
+    "main.css": "./static/css/main.04a81437.css",
+    "main.js": "./static/js/main.fd4f729e.js",
     "static/js/592.7f72a991.chunk.js": "./static/js/592.7f72a991.chunk.js",
     "static/media/somniary-landing.png": "./static/media/somniary-landing.3c510a8cca03a69ad1b2.png",
     "static/media/weather-dashboard.png": "./static/media/weather-dashboard.72f3392af307f141dd03.png",
@@ -17,12 +17,12 @@
     "static/media/notes-screenshot.png": "./static/media/notes-screenshot.04fa8ec6d1fe7faef6f2.png",
     "static/media/josie-griffin-resume.pdf": "./static/media/josie-griffin-resume.d034a36d6550c632b463.pdf",
     "index.html": "./index.html",
-    "main.232dab9b.css.map": "./static/css/main.232dab9b.css.map",
-    "main.4effb53d.js.map": "./static/js/main.4effb53d.js.map",
+    "main.04a81437.css.map": "./static/css/main.04a81437.css.map",
+    "main.fd4f729e.js.map": "./static/js/main.fd4f729e.js.map",
     "592.7f72a991.chunk.js.map": "./static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.232dab9b.css",
-    "static/js/main.4effb53d.js"
+    "static/css/main.04a81437.css",
+    "static/js/main.fd4f729e.js"
   ]
 }
