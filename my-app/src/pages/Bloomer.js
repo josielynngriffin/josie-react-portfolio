@@ -1,11 +1,11 @@
 import React from 'react';
 import ProjectIntroCS from '../components/ProjectIntroCS';
-import RightCS from '../components/RightCS';
+/*import RightCS from '../components/RightCS';
 import LeftCS from '../components/LeftCS';
-import FullCS from '../components/FullCS'
+import FullCS from '../components/FullCS';
 
 import placeholder from '../assets/images/placeholder.jpg';
-import test from '../assets/images/bloomer-project-preview.png';
+import test from '../assets/images/bloomer-project-preview.png';*/
 
 function Bloomer({ uxProjects, projectIndex}) {
     const project = uxProjects[projectIndex];
