@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio.js';
 import UXPortfolio from './pages/UXPortfolio.js';
 import Resume from './pages/Resume.js';
 import Bloomer from './pages/Bloomer.js';
+import Cohabitat from './pages/Cohabitat.js';
 import FWS from './pages/FWS.js';
 import LCCR from './pages/LCCR.js';
 
@@ -158,7 +159,7 @@ function App() {
           <Route path='/' element={<Landing/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
-          <Route path='/cohabitat' element={<Bloomer uxProjects={uxProjects} projectIndex={0}/>}/> 
+          <Route path='/cohabitat' element={<Cohabitat uxProjects={uxProjects} projectIndex={0}/>}/> 
           <Route path='/fws' element={<FWS uxProjects={uxProjects} projectIndex={1}/>}/>
           <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={2}/>}/>
           <Route path='/bloomer' element={<Bloomer uxProjects={uxProjects} projectIndex={3}/>}/>
