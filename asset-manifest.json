@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.c415497d.css",
-    "main.js": "./static/js/main.8c37135f.js",
+    "main.js": "./static/js/main.5baac1c7.js",
     "static/js/592.7f72a991.chunk.js": "./static/js/592.7f72a991.chunk.js",
     "static/media/somniary-landing.png": "./static/media/somniary-landing.3c510a8cca03a69ad1b2.png",
     "static/media/weather-dashboard.png": "./static/media/weather-dashboard.72f3392af307f141dd03.png",
@@ -19,11 +19,11 @@
     "static/media/josie-griffin-resume.pdf": "./static/media/josie-griffin-resume.d034a36d6550c632b463.pdf",
     "index.html": "./index.html",
     "main.c415497d.css.map": "./static/css/main.c415497d.css.map",
-    "main.8c37135f.js.map": "./static/js/main.8c37135f.js.map",
+    "main.5baac1c7.js.map": "./static/js/main.5baac1c7.js.map",
     "592.7f72a991.chunk.js.map": "./static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c415497d.css",
-    "static/js/main.8c37135f.js"
+    "static/js/main.5baac1c7.js"
   ]
 }
