@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FullCS({header, subtitle, textContent, listContent, imgLabel, img, imgAlt, imgDescription, imgStyle, Link, LinkText, className = ""}) {
+function DoubleImgCS({header, subtitle, textContent, listContent, imgLabel, img, imgAlt, imgLabel2, img2, imgAlt2, imgDescription, imgDescription2, imgStyle, Link, LinkText, className = ""}) {
     const paragraphs = textContent ? textContent.split('\n').filter(b => b.trim() !== '') : [];
     const bullets= listContent ? listContent.split('\n').filter(b => b.trim() !== '') : [];
     const hasTextContent= header || subtitle || paragraphs.length > 0 || bullets.length > 0;
@@ -17,13 +17,21 @@ function FullCS({header, subtitle, textContent, listContent, imgLabel, img, imgA
                 ))}</ul>}
                 {Link && <a className="portfolio-case__link" href={Link}>{LinkText}</a>}
             </section>}
-            {img &&<section className="fullCS--image-wrap">
-                <p className="label-text">{imgLabel}</p>
-                <img  className={`fullCS--image case-study-image__radius ${imgStyle}`} src={img} alt={imgAlt}></img>
-                <p className="small-text imgDescription">{imgDescription}</p>
-            </section>}
+            <div class="doubleCS-images__wrapper">
+                <section className="doubleCS--image-wrap">
+                    <p className="label-text">{imgLabel}</p>
+                    <img  className={`doubleCS--image case-study-image__radius ${imgStyle}`} src={img} alt={imgAlt}></img>
+                    <p className="small-text imgDescription">{imgDescription}</p>
+                </section>
+                <section className="doubleCS--image-wrap">
+                    <p className="label-text">{imgLabel2}</p>
+                    <img  className={`doubleCS--image case-study-image__radius ${imgStyle}`} src={img2} alt={imgAlt2}></img>
+                    <p className="small-text imgDescription">{imgDescription2}</p>
+                </section>
+            </div>
+            
         </div>
     );
 }
 
-export default FullCS;
+export default DoubleImgCS;
