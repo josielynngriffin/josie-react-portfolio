@@ -116,17 +116,6 @@ function App() {
       tools: 'Figma, Trello, Miro, Zoom',
     },
     {
-      name:"U.S. Fish & Wildlife - Government Redesign",
-      csName:"U.S. Fish & Wildlife Redesign",
-      roles: "UX Researcher & UI Designer",
-      link:"/fws",
-      image:FWSImg,
-      imgAlt:'Mockup of the Fish & Wildlife completed homepage redesign on a yellow background.',
-      description:"Revitalize a government organization's digital footprint to streamline access to vital information and resources!",
-      skills: ['UX Research', 'Information Architecture', 'Responsive Web Design'],
-      tools: 'Figma, Trello, Miro, Zoom',
-    },
-    {
       name:"Loving Care Cat Rescue - Nonprofit Redesign",
       csName: "Loving Care Cat Rescue Redesign",
       roles: "UX Researcher & UI Designer",
@@ -135,6 +124,17 @@ function App() {
       imgAlt:'Mockup of the Loving Care Cat Rescue design across a phone and laptop on a lavender background.',
       description:"Help a local cat rescue rebuild their brand identity, create a dynamic donation experience, and transform usability barriers into an engaging design.",
       skills: ['UX Research', 'Branding Identity', 'Responsive Web Design'],
+      tools: 'Figma, Trello, Miro, Zoom',
+    },
+    {
+      name:"U.S. Fish & Wildlife - Government Redesign",
+      csName:"U.S. Fish & Wildlife Redesign",
+      roles: "UX Researcher & UI Designer",
+      link:"/fws",
+      image:FWSImg,
+      imgAlt:'Mockup of the Fish & Wildlife completed homepage redesign on a yellow background.',
+      description:"Revitalize a government organization's digital footprint to streamline access to vital information and resources!",
+      skills: ['UX Research', 'Information Architecture', 'Responsive Web Design'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
     {
@@ -160,8 +160,8 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
           <Route path='/cohabitat' element={<Cohabitat uxProjects={uxProjects} projectIndex={0}/>}/> 
-          <Route path='/fws' element={<FWS uxProjects={uxProjects} projectIndex={1}/>}/>
-          <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={2}/>}/>
+          <Route path='/fws' element={<FWS uxProjects={uxProjects} projectIndex={2}/>}/>
+          <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={1}/>}/>
           <Route path='/bloomer' element={<Bloomer uxProjects={uxProjects} projectIndex={3}/>}/>
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
