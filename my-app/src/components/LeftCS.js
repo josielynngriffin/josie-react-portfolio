@@ -1,6 +1,6 @@
 import React from 'react';
 
-function LeftCS({header, subtitle, textContent, listContent, imgLabel, img, imgAlt, imgDescription, imgStyle, className = ""}) {
+function LeftCS({header, subtitle, textContent, listContent, imgLabel, img, imgAlt, imgDescription, imgStyle, Link, LinkText, className = ""}) {
     const paragraphs = textContent ? textContent.split('\n').filter(b => b.trim() !== '') : [];
     const bullets= listContent ? listContent.split('\n').filter(b => b.trim() !== '') : [];
 
@@ -15,6 +15,7 @@ function LeftCS({header, subtitle, textContent, listContent, imgLabel, img, imgA
                 <ul className="CS-component__list">{bullets.map((bullet, index) => (
                     <li key={index} className="case-study-text">{bullet}</li>
                 ))}</ul>
+                {Link && <a className="portfolio-case__link" href={Link}>{LinkText}</a>}
             </section>
             <section className="sideCS--image-wrap">
                 <p className="label-text">{imgLabel}</p>
