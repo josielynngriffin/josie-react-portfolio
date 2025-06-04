@@ -20,12 +20,12 @@ function Header() {
                     {/* <li className='portfolio__nav-item'><i className="portfolio__nav-icon fa-solid fa-circle-half-stroke"></i></li> */}
                 </ul>
             </nav>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><Link to='/'><h1 className="portfolio-name portfolio-name-m" data-bs-dismiss="offcanvas">josie <span className='portfolio-name__span portfolio-name__span-m'>griffin</span></h1></Link></h5>
+            <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div className="offcanvas-header">
+                    <h5 className="offcanvas-title" id="offcanvasExampleLabel"><Link to='/'><h1 className="portfolio-name portfolio-name-m" data-bs-dismiss="offcanvas">josie <span className='portfolio-name__span portfolio-name__span-m'>griffin</span></h1></Link></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i className="mobile-nav-close fa-solid fa-x"></i></button>
                 </div>
-                <div class="offcanvas-body">
+                <div className="offcanvas-body">
                     <nav>
                         <ul className='portfolio-nav'>
                             <Link to="/about"><li className='portfolio__nav-item portfolio__nav-item-m' data-bs-dismiss="offcanvas">about me</li></Link>
