@@ -3,12 +3,12 @@
     --NunitoSans: "Nunito", sans-serif;
     --Roca: "roca", sans-serif;
     --background-color: #F5F5F5;
-    --form-background-color:#B4B898 ;
+    --form-background-color:#CDD2B0 ;
     --form-button-color:#5A6445 ;
-    --orange-highlight: #CD6B34;
+    --orange-highlight: #B1511B;
     --main-accent-color: #5A6445;
     --main-second-dark: #76775B;
-    --second-accent-color: #B4B898;
+    --second-accent-color: #CDD2B0;
     --form-text-color: #F5F5F5;
 }
 /*GENERAL */
@@ -81,7 +81,7 @@ h4 {
     background-color: var(--second-accent-color);
 }
 
-.scrollButton:hover, .button__secondary:hover{
+.scrollButton:hover{
     background-color: var(--main-accent-color);
     color: white;
 }
@@ -133,10 +133,11 @@ h4 {
 }
 
 .portfolio__nav-button:hover {
-    background-color: var(--second-accent-color);
+    /*background-color: var(--second-accent-color);
+    color:black;*/
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
     transition: 0.4s;
     font-weight: 600;
-    color:black;
 }
 /*.portfolio__nav-button:hover {
     background-color:#515A3D;
@@ -363,11 +364,42 @@ ul {
 .portfolio-case__link:hover{
     font-weight:700;
 }
-
 .project__title{
     color:var(--main-accent-color);
     font-weight:bolder;
     font-size:1.5rem;
+}
+.featured__wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+.featured-projects__wrapper{
+    display:flex;
+    flex-flow: row wrap;
+    gap:1rem;
+    margin-top:1rem;
+}
+.portfolio__project--card-top{
+    width:100%;
+    gap:2rem;
+}
+.portfolio__project--card-feature{
+    flex-flow:column;
+    min-width:25%;
+    width:40%;
+    flex: 1 1 330px;
+    justify-content:flex-start;
+    gap:2rem;
+}
+.portfolio__project--info-feature{
+    width:100%;
+}
+.featured__project-image{
+    width:100%;
+    height:auto;
+    border-radius: 50px;
 }
 /*CASE STUDY*/
 .case-study-image__radius{
@@ -554,6 +586,9 @@ ul {
     gap:0.5rem;
     align-self:flex-end;
     padding:1rem 0;
+    border-color: transparent;
+    border-width:3px;
+    border-style:solid;
     background-color: var(--form-button-color);
     color:var(--form-text-color);
 }
@@ -561,10 +596,23 @@ ul {
     font-weight: 600;
     transition: 0.4s;
     background-color:#515A3D;
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
 }
 .case-study__link{
     width:45%;
     flex: 1 1 285px;
+}
+.button__secondary{
+    background-color: var(--background-color);
+    border-color: var(--orange-highlight);
+    border-width:3px;
+    border-style:solid;
+    color: var(--orange-highlight);
+}
+.button__secondary:hover{
+    color: var(--orange-highlight);
+    background-color: var(--background-color);
+    background-image: linear-gradient(rgb(0 0 0/5%) 0 0);
 }
 /*.button__secondary{
     background-color: var(--second-accent-color);
