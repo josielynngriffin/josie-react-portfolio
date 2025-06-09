@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.f4f00efd.css",
-    "main.js": "./static/js/main.a24b1542.js",
+    "main.css": "./static/css/main.4e98aa01.css",
+    "main.js": "./static/js/main.986db20b.js",
     "static/js/592.7f72a991.chunk.js": "./static/js/592.7f72a991.chunk.js",
     "static/media/lccr-iterations.gif": "./static/media/lccr-iterations.453f9a3dd402ea0c43fb.gif",
     "static/media/cohabitat-sketches.png": "./static/media/cohabitat-sketches.71527d7a3c0694f25145.png",
@@ -16,10 +16,10 @@
     "static/media/about-hero.png": "./static/media/about-hero.e085a98a58557b3b6f7b.png",
     "static/media/cohabitat-affinity.png": "./static/media/cohabitat-affinity.c8db83f8c44cf6582776.png",
     "static/media/lccr-evaluation.png": "./static/media/lccr-evaluation.ae7b793f89d6a21dbfb8.png",
-    "static/media/cohabitat-preview-1.png": "./static/media/cohabitat-preview-1.9eda324187a2ac5cc382.png",
-    "static/media/lccr-project-preview.png": "./static/media/lccr-project-preview.cd0d5dd82496c79a4cbb.png",
-    "static/media/fws-project-preview.png": "./static/media/fws-project-preview.bc4e7e56f612bbc8e27e.png",
+    "static/media/lccr-project-preview.png": "./static/media/lccr-project-preview.3726ac1f23761134aa26.png",
+    "static/media/fws-project-preview.png": "./static/media/fws-project-preview.2881f23583cfc656865b.png",
     "static/media/bloomer-project-preview.png": "./static/media/bloomer-project-preview.99a492d49c3dc1538355.png",
+    "static/media/cohabitat-preview-1.png": "./static/media/cohabitat-preview-1.4d338bcdc1238bc12f0e.png",
     "static/media/lightmode-headshot.png": "./static/media/lightmode-headshot.bcf32319a0d2ccb6205c.png",
     "static/media/workday-screenshot.png": "./static/media/workday-screenshot.cc1fc962258e2e3238a8.png",
     "static/media/cohabitat-final-iteration.png": "./static/media/cohabitat-final-iteration.d040aab9467f12bed2c7.png",
@@ -39,12 +39,12 @@
     "static/media/lccr-survey4.png": "./static/media/lccr-survey4.0f74b5bc759033b933a9.png",
     "static/media/lccr-survey1.png": "./static/media/lccr-survey1.dbf7b118eeeef8702925.png",
     "index.html": "./index.html",
-    "main.f4f00efd.css.map": "./static/css/main.f4f00efd.css.map",
-    "main.a24b1542.js.map": "./static/js/main.a24b1542.js.map",
+    "main.4e98aa01.css.map": "./static/css/main.4e98aa01.css.map",
+    "main.986db20b.js.map": "./static/js/main.986db20b.js.map",
     "592.7f72a991.chunk.js.map": "./static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4f00efd.css",
-    "static/js/main.a24b1542.js"
+    "static/css/main.4e98aa01.css",
+    "static/js/main.986db20b.js"
   ]
 }
