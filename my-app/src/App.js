@@ -112,7 +112,7 @@ function App() {
       image:CohabitatImg,
       imgAlt:'Mockup of Cohabitat, showcasing various mobile mockups of a roommate management app on an orange background.',
       description:"Find harmony with your roommates with Cohabitat! Divvy up tasks, share expenses, and get rewarded for responsibility by creating a joyful home.",
-      skills: ['UX Research', 'UI Design', 'User Testing'],
+      skills: ['UX Research', 'UI Design', 'User Testing', 'Product Design'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
     {
@@ -137,17 +137,6 @@ function App() {
       skills: ['UX Research', 'Information Architecture', 'Responsive Web Design'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
-    {
-      name:"Bloomer - A Plant Care App",
-      csName:"Bloomer",
-      roles: "UX Researcher & UI Designer",
-      link:"/bloomer",
-      image:BloomerImg,
-      imgAlt:'Mockup of Bloomer, showcasing various mobile wireframes of a plant care app on a light green background.',
-      description:"Redefine your plant care experience with Bloomer! Gamify your green thumb with streaks, build your plant collection, and watch your plants thrive like never before.",
-      skills: ['UX Research', 'UI Design', 'User Testing'],
-      tools: 'Figma, Trello, Miro, Zoom',
-    },
   ];
 
 
@@ -156,13 +145,12 @@ function App() {
       <div className="portfolio-page__wrapper App" >
         <Header/>
         <Routes>
-          <Route path='/' element={<Landing/>}/>
+          <Route path='/' element={<Landing uxProjects={uxProjects}/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
           <Route path='/cohabitat' element={<Cohabitat uxProjects={uxProjects} projectIndex={0}/>}/> 
           <Route path='/fws' element={<FWS uxProjects={uxProjects} projectIndex={2}/>}/>
           <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={1}/>}/>
-          <Route path='/bloomer' element={<Bloomer uxProjects={uxProjects} projectIndex={3}/>}/>
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
