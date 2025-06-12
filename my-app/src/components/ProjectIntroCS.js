@@ -15,7 +15,7 @@ function ProjectIntroCS({project}) {
                 <p className="label-text">Design Role</p>
                 <p>{project.roles}</p>
                 <p className="label-text">Timeline</p>
-                <p>3 weeks</p>
+                <p>{project.timeline}</p>
                 <p className="label-text">Tools</p>
                 <p>{project.tools}</p>
             </section>
