@@ -12,6 +12,7 @@ import Bloomer from './pages/Bloomer.js';
 import Cohabitat from './pages/Cohabitat.js';
 import FWS from './pages/FWS.js';
 import LCCR from './pages/LCCR.js';
+import AboutUs from './pages/AboutUs.js'
 
 //Component Imports
 import Header from './components/Header.js';
@@ -28,6 +29,7 @@ import Notes from './assets/images/notes-screenshot.png';
 import Feev from './assets/images/feev-screenshot.png';
 import LCCRImg from './assets/images/lccr-project-preview.png';
 import FWSImg from './assets/images/fws-project-preview.png';
+import AboutUsImg from './assets/images/aboutus-preview.png';
 import BloomerImg from './assets/images/bloomer-project-preview.png';
 import CohabitatImg from './assets/images/cohabitat-preview-1.png';
 
@@ -105,9 +107,22 @@ function App() {
 
   const uxProjects = [
     {
-      name:"Cohabitat - An App for Roommates",
+      name:"The Restaurant Store About Us Page - Redesigning for Customer Clarity",
+      csName:"About Us Page Redesign",
+      roles: "UX Researcher & UI Designer",
+      timeline: "Q3 2024",
+      link:"/aboutus",
+      image:AboutUsImg,
+      imgAlt:"Mockup of The Restaurant Store's completed About Us page redesign on a green background.",
+      description:"Revitalizing The Restaurant Store's About Us page to improve shopping clarity, address user needs, and enhance customer trust.",
+      skills: ['Brand Strategy', 'UI Design', 'B2B E-Commerce'],
+      tools: 'Figma, Miro, Google Analytics, Microsoft Clarity',
+    },
+    {
+      name:"Cohabitat - App Design Enabling Adult Roommates to Live In Harmony",
       csName:"Cohabitat",
       roles: "UX Researcher & UI Designer",
+      timeline: "3 weeks",
       link:"/cohabitat",
       image:CohabitatImg,
       imgAlt:'Mockup of Cohabitat, showcasing various mobile mockups of a roommate management app on an orange background.',
@@ -119,24 +134,14 @@ function App() {
       name:"Loving Care Cat Rescue - Nonprofit Redesign",
       csName: "Loving Care Cat Rescue Redesign",
       roles: "UX Researcher & UI Designer",
+      timeline: "3 weeks",
       link:"/lccr",
       image:LCCRImg,
       imgAlt:'Mockup of the Loving Care Cat Rescue design across a phone and laptop on a lavender background.',
       description:"Help a local cat rescue rebuild their brand identity, create a dynamic donation experience, and transform usability barriers into an engaging design.",
-      skills: ['UX Research', 'Branding Identity', 'Responsive Web Design'],
+      skills: ['UX Research', 'Branding Identity', 'Information Architecture'],
       tools: 'Figma, Trello, Miro, Zoom',
-    },
-    {
-      name:"U.S. Fish & Wildlife - Government Redesign",
-      csName:"U.S. Fish & Wildlife Redesign",
-      roles: "UX Researcher & UI Designer",
-      link:"/fws",
-      image:FWSImg,
-      imgAlt:'Mockup of the Fish & Wildlife completed homepage redesign on a yellow background.',
-      description:"Revitalize a government organization's digital footprint to streamline access to vital information and resources!",
-      skills: ['UX Research', 'Information Architecture', 'Responsive Web Design'],
-      tools: 'Figma, Trello, Miro, Zoom',
-    },
+    }
   ];
 
 
@@ -148,9 +153,9 @@ function App() {
           <Route path='/' element={<Landing uxProjects={uxProjects}/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
-          <Route path='/cohabitat' element={<Cohabitat uxProjects={uxProjects} projectIndex={0}/>}/> 
-          <Route path='/fws' element={<FWS uxProjects={uxProjects} projectIndex={2}/>}/>
-          <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={1}/>}/>
+          <Route path='/cohabitat' element={<Cohabitat uxProjects={uxProjects} projectIndex={1}/>}/> 
+          <Route path='/aboutus' element={<AboutUs uxProjects={uxProjects} projectIndex={0}/>}/>
+          <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={2}/>}/>
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
