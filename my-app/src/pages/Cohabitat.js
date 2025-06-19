@@ -15,7 +15,7 @@ import expenses from '../assets/images/cohabitat-expenses.png';
 import feedback from '../assets/images/cohabitat-quotes.png';
 import iteration1 from '../assets/images/cohabitat-iteration.png';
 import iteration2 from '../assets/images/cohabitat-final-iteration.png';
-import final from '../assets/images/cohabitat-preview-1.png';
+import final from '../assets/images/cohabitat-final.png';
 
 function Cohabitat({ uxProjects, projectIndex}) {
     const project = uxProjects[projectIndex];
