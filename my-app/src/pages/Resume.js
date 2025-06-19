@@ -1,5 +1,5 @@
 import React from 'react';
-import pdf from '../assets/images/josie-griffin-resume.pdf';
+import pdf from '../assets/images/jessica-griffin-product-designer-resume.pdf';
 
 function Resume() {
     return (
