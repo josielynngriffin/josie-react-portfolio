@@ -1,6 +1,7 @@
 import React from 'react';
 import headshot from '../assets/images/lightmode-headshot.png';
 import {Link} from 'react-router-dom';
+import ThreeCS from '../components/ThreeCS';
 
 function Landing({uxProjects}) {
     //console.log(props);
@@ -23,6 +24,9 @@ function Landing({uxProjects}) {
                     <img className='landing-headshot' src={headshot} alt='Headshot of Josie Griffin from her shoulders up in black and white'/>
                 </figure>
             </div>
+            <section class="principles__wrapper">
+            <h2 className="principles__title"><span className="title__break">|</span> my core principles</h2>
+            <ThreeCS className="principles__wrapper" statTitle="Communication" statText="Truly listening to what others have to say and asking insightful questions to drive feedback." statTitle2="Problem-Solving" statText2="Approaching problems in a flexible way, using product strategy to seek simple solutions." statTitle3="Accessibility" statText3="Upholding accessibility standards with empathy to consider and meet every user's needs."></ThreeCS></section>
             <section className="case-study__bg featured__wrapper">
             <h2><span className="title__break">|</span> featured case studies</h2>
                 <div className="featured-projects__wrapper">
