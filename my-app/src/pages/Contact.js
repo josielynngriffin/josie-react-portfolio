@@ -18,8 +18,8 @@ function Contact() {
         <div className="contact-page__wrapper">
             <section className="contact__blurb">
                 <h1 className="contact__title"><span className="title__break">|</span> contact me</h1>
-                <p>I’m always interested in chatting through design challenges, sharing insights, and opportunities to collaborate!</p>
-                <p>Get in touch with me by sending a message, connect with me on LinkedIn, or follow my development on GitHub :) </p>
+                <p>I’m always interested in chatting through feedback, design challenges, and opportunities to collaborate!</p>
+                <p>Get in touch with me by sending a message, connect with me on LinkedIn, or follow my development on GitHub. </p>
                 <a href="https://github.com/josielynngriffin"><i className="portfolio__icon fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/josiegriffin/"><i className="portfolio__icon fa-brands fa-linkedin"></i></a>
                 <a href="mailto: jelynngriffin@gmail.com" target="_blank" rel="noreferrer"><i className="portfolio__icon fa-solid fa-envelope"></i></a>
