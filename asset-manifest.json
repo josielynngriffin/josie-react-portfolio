@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.c62de450.css",
-    "main.js": "./static/js/main.ae8d171b.js",
+    "main.js": "./static/js/main.31b2ef9f.js",
     "static/js/592.7f72a991.chunk.js": "./static/js/592.7f72a991.chunk.js",
     "static/media/lccr-iterations.gif": "./static/media/lccr-iterations.453f9a3dd402ea0c43fb.gif",
     "static/media/aboutus-finalscroll.gif": "./static/media/aboutus-finalscroll.a33f32c2cd5461af3eb3.gif",
@@ -22,11 +22,11 @@
     "static/media/aboutus-sketch.png": "./static/media/aboutus-sketch.90b86ba6f3c7efc8e49a.png",
     "static/media/cohabitat-affinity.png": "./static/media/cohabitat-affinity.c8db83f8c44cf6582776.png",
     "static/media/aboutus-final.png": "./static/media/aboutus-final.ca7891fd965f26bba001.png",
+    "static/media/cohabitat-final.png": "./static/media/cohabitat-final.26c797047c2f23c44064.png",
     "static/media/lccr-evaluation.png": "./static/media/lccr-evaluation.ae7b793f89d6a21dbfb8.png",
     "static/media/lccr-project-preview.png": "./static/media/lccr-project-preview.3726ac1f23761134aa26.png",
     "static/media/fws-project-preview.png": "./static/media/fws-project-preview.2881f23583cfc656865b.png",
     "static/media/bloomer-project-preview.png": "./static/media/bloomer-project-preview.99a492d49c3dc1538355.png",
-    "static/media/cohabitat-final.png": "./static/media/cohabitat-final.418123f7283df4ef1126.png",
     "static/media/lightmode-headshot.png": "./static/media/lightmode-headshot.bcf32319a0d2ccb6205c.png",
     "static/media/workday-screenshot.png": "./static/media/workday-screenshot.cc1fc962258e2e3238a8.png",
     "static/media/aboutus-preview.png": "./static/media/aboutus-preview.55ebd16ce64b5a30375e.png",
@@ -52,11 +52,11 @@
     "static/media/lccr-survey1.png": "./static/media/lccr-survey1.dbf7b118eeeef8702925.png",
     "index.html": "./index.html",
     "main.c62de450.css.map": "./static/css/main.c62de450.css.map",
-    "main.ae8d171b.js.map": "./static/js/main.ae8d171b.js.map",
+    "main.31b2ef9f.js.map": "./static/js/main.31b2ef9f.js.map",
     "592.7f72a991.chunk.js.map": "./static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c62de450.css",
-    "static/js/main.ae8d171b.js"
+    "static/js/main.31b2ef9f.js"
   ]
 }
