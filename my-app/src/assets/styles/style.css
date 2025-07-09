@@ -398,10 +398,12 @@ ul {
 }
 .portfolio-case__link{
     color: var(--orange-highlight);
-    text-decoration: underline;
 }
-.portfolio-case__link:hover{
-    font-weight:700;
+.portfolio-case__link:hover{ 
+    color: #973D0A;
+    transition: 0.25s;
+    font-weight:500;
+    text-decoration: underline;
 }
 .project__title{
     color:var(--main-accent-color);
