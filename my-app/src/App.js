@@ -8,11 +8,10 @@ import Contact from './pages/Contact.js';
 import Portfolio from './pages/Portfolio.js';
 import UXPortfolio from './pages/UXPortfolio.js';
 import Resume from './pages/Resume.js';
-import Bloomer from './pages/Bloomer.js';
 import Cohabitat from './pages/Cohabitat.js';
-import FWS from './pages/FWS.js';
 import LCCR from './pages/LCCR.js';
-import AboutUs from './pages/AboutUs.js'
+import AboutUs from './pages/AboutUs.js';
+import Checkout from './pages/Checkout.js';
 
 //Component Imports
 import Header from './components/Header.js';
@@ -28,10 +27,9 @@ import Jate from './assets/images/jate-screenshot.png';
 import Notes from './assets/images/notes-screenshot.png';
 import Feev from './assets/images/feev-screenshot.png';
 import LCCRImg from './assets/images/lccr-project-preview.png';
-import FWSImg from './assets/images/fws-project-preview.png';
 import AboutUsImg from './assets/images/aboutus-preview.png';
-import BloomerImg from './assets/images/bloomer-project-preview.png';
 import CohabitatImg from './assets/images/cohabitat-preview-1.png';
+import CheckoutImg from './assets/images/checkout-project-preview.png';
 
 //Asset Imports
 import './assets/styles/reset.css';
@@ -107,6 +105,18 @@ function App() {
 
   const uxProjects = [
     {
+      name:"The Restaurant Store Checkout - Redesigning for Conversion",
+      csName:"Checkout Flow Redesign",
+      roles: "UI Designer",
+      timeline: "Q1 2025",
+      link:"/checkout",
+      image:CheckoutImg,
+      imgAlt:"Mockup of The Restaurant Store's completed About Us page redesign on a green background.",
+      description:"Revamping The Restaurant Store's checkout flow to improve shopping clarity, address user needs, and enhance customer trust.",
+      skills: ['Product Design', 'Prototyping', 'User Flows', 'B2B E-Commerce'],
+      tools: 'Figma, Miro, Google Analytics, Microsoft Clarity, Lyssna',
+    },
+    {
       name:"The Restaurant Store About Us Page - Redesigning for Customer Clarity",
       csName:"About Us Page Redesign",
       roles: "UX Researcher & UI Designer",
@@ -153,9 +163,10 @@ function App() {
           <Route path='/' element={<Landing uxProjects={uxProjects}/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/ux-ui' element={<UXPortfolio uxProjects={uxProjects}/>}/>
-          <Route path='/cohabitat' element={<Cohabitat uxProjects={uxProjects} projectIndex={1}/>}/> 
-          <Route path='/aboutus' element={<AboutUs uxProjects={uxProjects} projectIndex={0}/>}/>
-          <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={2}/>}/>
+          <Route path='/checkout' element={<Checkout uxProjects={uxProjects} projectIndex={0}/>}/> 
+          <Route path='/aboutus' element={<AboutUs uxProjects={uxProjects} projectIndex={1}/>}/>
+          <Route path='/cohabitat' element={<Cohabitat uxProjects={uxProjects} projectIndex={2}/>}/> 
+          <Route path='/lccr' element={<LCCR uxProjects={uxProjects} projectIndex={3}/>}/>
           <Route path='/web-dev' element={<Portfolio projects={projects} Somniary={Somniary}/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/resume' element={<Resume/>}/>
