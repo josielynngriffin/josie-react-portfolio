@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import ProjectIntroCS from '../components/ProjectIntroCS';
 import RightCS from '../components/RightCS';
 import LeftCS from '../components/LeftCS';
@@ -21,6 +23,10 @@ import final from '../assets/images/lccr-final.png';
 
 function LCCR({ uxProjects, projectIndex}) {
     const project = uxProjects[projectIndex];
+    const adjacentIndexes = [
+        projectIndex > 0 ? projectIndex - 1 : null,
+        projectIndex > 0 ? projectIndex - 3 : null
+    ].filter(index => index !== null); // Remove nulls
     return (
         <div className="case-study__wrapper">
             <ProjectIntroCS project={project}/>
@@ -46,6 +52,34 @@ function LCCR({ uxProjects, projectIndex}) {
                 
             </div>
             <FullCS className="case-study__bg" header="Conclusion" subtitle="Final thoughts:" textContent={"It's important to put down as many ideas as possible when brainstorming with a team. Our prototype's success came from rounds of iteration and feedback sessions.\nWhen designing a product, it is vital to fall back on strategic thinking and user insights. By utilizing testing and feature prioritization aligned with our core business goals, we brought clarity to our prototype. \nFuture Development:"} listContent={"Expand the redesign to the rest of the site following the UI style guide and future user tests.\nBuild a donation and adoption application system into the site.\nRefine the microinteractions and implement more across the site to improve the browsing experience."}></FullCS>
+            <section className="case-study__padding featured__wrapper">
+                        <h2><span className="title__break">|</span> you may also enjoy</h2>
+                            <div className="featured-projects__wrapper">
+                                {adjacentIndexes.map((index) =>{
+                                    const adjProject = uxProjects[index];
+                                    return(
+                                        <section className="portfolio__project--card portfolio__project--card-feature" key={index}>
+                                            <div className="portfolio__project--info-feature">
+                                                <img src={adjProject.image} alt={adjProject.imgAlt} className="featured__project-image"></img>
+                                            </div>
+                                            <div className="portfolio__project--info-feature">
+                                                <h3 className="project__title">{adjProject.name}</h3>
+                                                <ul className="project__skills--list">
+                                                    {adjProject.skills.map((skill, skillIndex) => (
+                                                        <li className="label-text" key={skillIndex}>{skill}</li>
+                                                    ))}
+                                                </ul>
+                                                <section>
+                                                    <Link className="portfolio-case__link" to={adjProject.link} onClick={() => window.scrollTo(0, 0)}>View Case Study
+                                                    </Link>
+                                                </section>
+                                                                  
+                                            </div>
+                                            </section>
+                                            )
+                                            })}
+                                        </div>
+                                    </section>
         </div>
     );
 }

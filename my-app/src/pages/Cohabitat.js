@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import ProjectIntroCS from '../components/ProjectIntroCS';
 import RightCS from '../components/RightCS';
 import LeftCS from '../components/LeftCS';
@@ -19,6 +21,10 @@ import final from '../assets/images/cohabitat-final.png';
 
 function Cohabitat({ uxProjects, projectIndex}) {
     const project = uxProjects[projectIndex];
+    const adjacentIndexes = [
+        projectIndex > 0 ? projectIndex - 1 : null,
+        projectIndex < uxProjects.length - 1 ? projectIndex + 1 : null
+    ].filter(index => index !== null); // Remove nulls
     return (
         <div className="case-study__wrapper">
             <ProjectIntroCS project={project}/>
@@ -45,6 +51,34 @@ function Cohabitat({ uxProjects, projectIndex}) {
             </div>
             
             <FullCS className="case-study__bg" header="Conclusion" subtitle="Final thoughts:" textContent={"Collaborating, iterating often, and applying methodologies from our combined toolsets defined this case study for our team. We learned the continued importance of communication and feedback, be it from users or from your own network of peers.\n Future Development:"} listContent={"Continuing to iterate on expense features within our app is of top priority. Our user research showed that finances can be tricky for users and we want to make this experience as simple as possible for them.\nWe want to fully flesh out our reward system. We’ve given our users tidy stars, but now we want to get creative and give them practical use and value.\nOn user habitat dashboards, we've added in the future concept of challenges. Developing lessons and adding in content that fulfills user goals of communication support is our next step!"}></FullCS>
+            <section className="case-study__padding featured__wrapper">
+                        <h2><span className="title__break">|</span> you may also enjoy</h2>
+                            <div className="featured-projects__wrapper">
+                                {adjacentIndexes.map((index) =>{
+                                    const adjProject = uxProjects[index];
+                                    return(
+                                        <section className="portfolio__project--card portfolio__project--card-feature" key={index}>
+                                            <div className="portfolio__project--info-feature">
+                                                <img src={adjProject.image} alt={adjProject.imgAlt} className="featured__project-image"></img>
+                                            </div>
+                                            <div className="portfolio__project--info-feature">
+                                                <h3 className="project__title">{adjProject.name}</h3>
+                                                <ul className="project__skills--list">
+                                                    {adjProject.skills.map((skill, skillIndex) => (
+                                                        <li className="label-text" key={skillIndex}>{skill}</li>
+                                                        ))}
+                                                </ul>
+                                                <section>
+                                                    <Link className="portfolio-case__link" to={adjProject.link} onClick={() => window.scrollTo(0, 0)}>View Case Study
+                                                    </Link>
+                                                </section>
+                                                                  
+                                             </div>
+                                            </section>
+                                            )
+                                            })}
+                                        </div>
+                                    </section>
         </div>
     );
 }

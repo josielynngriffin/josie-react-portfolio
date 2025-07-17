@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import ProjectIntroCS from '../components/ProjectIntroCS';
 import RightCS from '../components/RightCS';
 import LeftCS from '../components/LeftCS';
@@ -23,6 +25,11 @@ import finalscroll from '../assets/images/checkout-finalscroll.gif';
 
 function Checkout({ uxProjects, projectIndex}) {
     const project = uxProjects[projectIndex];
+    const adjacentIndexes = [
+        //projectIndex > 0 ? projectIndex - 1 : null,
+        projectIndex < uxProjects.length - 1 ? projectIndex + 1 : null,
+        projectIndex < uxProjects.length - 1 ? projectIndex + 2 : null
+    ].filter(index => index !== null); // Remove nulls
     return (
         <div className="case-study__wrapper">
             <ProjectIntroCS project={project}/>
@@ -55,6 +62,35 @@ function Checkout({ uxProjects, projectIndex}) {
                 <a href="https://www.figma.com/proto/TtxBptdhvKsN6JjJj8VTej/Cart---Checkout-2025?page-id=40000062%3A92208&node-id=40000062-93749&viewport=129%2C310%2C0.5&t=TFzBnk5ksUpdI7Es-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=40000062%3A93749" className="contactForm__button case-study__link button__secondary">Order confirmation prototype here<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <FullCS className="case-study__bg" header="Conclusion" subtitle="Final thoughts:" textContent={"This redesign made it easier for busy foodservice professionals to get back to running their kitchens instead of wrestling with checkout forms and struggling to understand fulfillment options. It's a reminder that even small UI and flow changes can create massive value in high-volume B2B systems.\nAs the UI Designer leading the redesign of the checkout flow, I thrived taking ownership of the flow, refining little details, coordinating consistent design patterns between cart and checkout, and iterating to get the best solutions possible.\nI'm grateful to have collaborated with my product design team, development, and customer service to deliver a solution aligned with user and business needs.\n Key Learning Opportunities:"} listContent={"Meeting the needs of different user types through dynamic content.\nDeepening my understanding of our fulfillment types from screen to store.\nTaking charge of a complicated end-to-end project with many pieces.\nCollaborating with development on design constraints and outlining logic for payment and fulfillment."} ></FullCS>
+            <section className="case-study__padding featured__wrapper">
+                        <h2><span className="title__break">|</span> you may also enjoy</h2>
+                            <div className="featured-projects__wrapper">
+                                {adjacentIndexes.map((index) =>{
+                                    const adjProject = uxProjects[index];
+                                           return(
+                                               <section className="portfolio__project--card portfolio__project--card-feature" key={index}>
+                                                   <div className="portfolio__project--info-feature">
+                                                       <img src={adjProject.image} alt={adjProject.imgAlt} className="featured__project-image"></img>
+                                                   </div>
+                                                   <div
+                                                   className="portfolio__project--info-feature">
+                                                       <h3 className="project__title">{adjProject.name}</h3>
+                                                       <ul className="project__skills--list">
+                                                           {adjProject.skills.map((skill, skillIndex) => (
+                                                               <li className="label-text" key={skillIndex}>{skill}</li>
+                                                           ))}
+                                                       </ul>
+                                                       <section>
+                                                       <Link className="portfolio-case__link" to={adjProject.link} onClick={() => window.scrollTo(0, 0)}>View Case Study
+                                                       </Link>
+                                                       </section>
+                                                      
+                                                   </div>
+                                               </section>
+                                           )
+                                       })}
+                            </div>
+                        </section>
         </div>
     );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import ProjectIntroCS from '../components/ProjectIntroCS';
 import RightCS from '../components/RightCS';
@@ -20,6 +21,10 @@ import finalscroll from '../assets/images/aboutus-finalscroll.gif';
 
 function AboutUs({ uxProjects, projectIndex}) {
     const project = uxProjects[projectIndex];
+    const adjacentIndexes = [
+        projectIndex > 0 ? projectIndex - 1 : null,
+        projectIndex < uxProjects.length - 1 ? projectIndex + 1 : null
+    ].filter(index => index !== null); // Remove nulls
     return (
         <div className="case-study__wrapper">
             <ProjectIntroCS project={project}/>
@@ -43,6 +48,34 @@ function AboutUs({ uxProjects, projectIndex}) {
                 <a href="https://www.therestaurantstore.com/about-us" className="contactForm__button case-study__link">Live page here<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <FullCS header="Conclusion" subtitle="Final thoughts:" textContent={"This project reinforced the value of user-centered design in strengthening customer relationships and supporting business growth. Through teamwork, research, and continuous iteration, we made meaningful improvements that better supported users and set the stage for an intuitive entry-point to the brand. \nAs the UI Designer, I led thoughtful, research-driven design decisions that not only elevated user experience but also reflected the needs of The Restaurant Store’s brand identity as a trusted, service-focused partner of foodservice professionals.\n I learned that when designing a product, early feedback and alignment with stakeholders is vital to stay aligned with business strategy.\n "}></FullCS>
+            <section className="case-study__bg case-study__padding featured__wrapper">
+                        <h2><span className="title__break">|</span> you may also enjoy</h2>
+                            <div className="featured-projects__wrapper">
+                                {adjacentIndexes.map((index) =>{
+                                    const adjProject = uxProjects[index];
+                                    return(
+                                        <section className="portfolio__project--card portfolio__project--card-feature" key={index}>
+                                        <div className="portfolio__project--info-feature">
+                                            <img src={adjProject.image} alt={adjProject.imgAlt} className="featured__project-image"></img>
+                                        </div>
+                                        <div className="portfolio__project--info-feature">
+                                            <h3 className="project__title">{adjProject.name}</h3>
+                                                <ul className="project__skills--list">
+                                                    {adjProject.skills.map((skill, skillIndex) => (
+                                                        <li className="label-text" key={skillIndex}>{skill}</li>
+                                                    ))}
+                                                </ul>
+                                                <section>
+                                                    <Link className="portfolio-case__link" to={adjProject.link} onClick={() => window.scrollTo(0, 0)}>View Case Study
+                                                    </Link>
+                                                </section>
+                                                                  
+                                        </div>
+                                        </section>
+                                        )
+                                        })}
+                                        </div>
+                                    </section>
         </div>
     );
 }
