@@ -847,6 +847,7 @@ footer {
         min-height:207px;
         max-width:331px;
         max-height:207px;
+        border-radius: 30px;
     }
     .portfolio__project--info, .portfolio__project--info-even {
         min-width: 331px;
