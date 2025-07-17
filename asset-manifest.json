@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.9561665a.css",
-    "main.js": "./static/js/main.c3a2ade8.js",
+    "main.css": "./static/css/main.a832420b.css",
+    "main.js": "./static/js/main.3a8c405d.js",
     "static/js/592.7f72a991.chunk.js": "./static/js/592.7f72a991.chunk.js",
     "static/media/lccr-iterations.gif": "./static/media/lccr-iterations.453f9a3dd402ea0c43fb.gif",
     "static/media/aboutus-finalscroll.gif": "./static/media/aboutus-finalscroll.a33f32c2cd5461af3eb3.gif",
@@ -35,11 +35,11 @@
     "static/media/aboutus-iteration2.png": "./static/media/aboutus-iteration2.b9d6641c7991a8a6dfc4.png",
     "static/media/aboutus-wireframes.png": "./static/media/aboutus-wireframes.f8daf3e4da466008abc3.png",
     "static/media/checkout-fulfillment1.png": "./static/media/checkout-fulfillment1.f23d363aa6fe75a4dd9d.png",
+    "static/media/checkout-commoncarrier.png": "./static/media/checkout-commoncarrier.85176c111410f23d084e.png",
     "static/media/jessica-griffin-product-designer-resume.pdf": "./static/media/jessica-griffin-product-designer-resume.84266849e83cbfb1f8d0.pdf",
     "static/media/lccr-sketch2.png": "./static/media/lccr-sketch2.1983abaa4956abbc4cc1.png",
     "static/media/cohabitat-onboarding.png": "./static/media/cohabitat-onboarding.926a96f91a2b1ffb7528.png",
     "static/media/cohabitat-chores.png": "./static/media/cohabitat-chores.a2e9eeede6e5fa79f310.png",
-    "static/media/checkout-commoncarrier.png": "./static/media/checkout-commoncarrier.4b2f401befc3491dad11.png",
     "static/media/aboutus-iteration1.png": "./static/media/aboutus-iteration1.43655a24788c143a0d85.png",
     "static/media/cohabitat-expenses.png": "./static/media/cohabitat-expenses.6cf070a6aafe69adce4c.png",
     "static/media/jate-screenshot.png": "./static/media/jate-screenshot.e25e8b8b4626ba31c9b3.png",
@@ -64,12 +64,12 @@
     "static/media/lccr-survey4.png": "./static/media/lccr-survey4.0f74b5bc759033b933a9.png",
     "static/media/lccr-survey1.png": "./static/media/lccr-survey1.dbf7b118eeeef8702925.png",
     "index.html": "./index.html",
-    "main.9561665a.css.map": "./static/css/main.9561665a.css.map",
-    "main.c3a2ade8.js.map": "./static/js/main.c3a2ade8.js.map",
+    "main.a832420b.css.map": "./static/css/main.a832420b.css.map",
+    "main.3a8c405d.js.map": "./static/js/main.3a8c405d.js.map",
     "592.7f72a991.chunk.js.map": "./static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9561665a.css",
-    "static/js/main.c3a2ade8.js"
+    "static/css/main.a832420b.css",
+    "static/js/main.3a8c405d.js"
   ]
 }
