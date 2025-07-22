@@ -45,7 +45,7 @@ function App() {
       image:Somniary,
       imgAlt:'Screenshot of Somniary web application showcasing the landing page, a dreamy landscape with a music player and Explore button.',
       description:"An application designed for users to log their dreams. Users may securely track their dreams in a private journal upon login with full user authentication and secure password management, submit them to a public collective if they wish, and catalog their dreams by type.",
-      skills: ['Express.js', 'Handlebars.js', 'MySQL', 'JavaScript'],
+      skills: ['Express.js', 'Handlebars.js', 'MySQL', 'JavaScript', 'Saas Product Design'],
     },
     {
       name:"feev.io",
@@ -54,7 +54,7 @@ function App() {
       image:Feev,
       imgAlt:'Screenshot of feev.io web application showcasing the landing page, sign up and log in links with informational graphics.',
       description:"A trivia application, elevated with a visually fun and responsive interface. Users can sign in and compete in a broad range of categories to earn a spot on feev.io's leaderboard!",
-      skills: ['React.js', 'GraphQL', 'MongoDB', 'Mongoose', 'JavaScript'],
+      skills: ['React.js', 'GraphQL', 'MongoDB', 'Mongoose', 'JavaScript', 'UI Design'],
     },
     {
       name:"Catterday",
@@ -105,7 +105,7 @@ function App() {
 
   const uxProjects = [
     {
-      name:"The Restaurant Store Checkout - Redesigning for Conversion",
+      name:"The Restaurant Store Checkout - Redesigning to Drive Higher Conversion",
       csName:"Checkout Flow Redesign",
       roles: "UI Designer",
       timeline: "Q1 2025",
@@ -125,7 +125,7 @@ function App() {
       image:AboutUsImg,
       imgAlt:"Mockup of The Restaurant Store's completed About Us page redesign on a green background.",
       description:"Revitalizing The Restaurant Store's About Us page to improve shopping clarity, address user needs, and enhance customer trust.",
-      skills: ['Brand Strategy', 'UI Design', 'B2B E-Commerce'],
+      skills: ['Brand Strategy', 'UI Design', 'B2B E-Commerce', 'User Research'],
       tools: 'Figma, Miro, Google Analytics, Microsoft Clarity',
     },
     {
@@ -137,7 +137,7 @@ function App() {
       image:CohabitatImg,
       imgAlt:'Mockup of Cohabitat, showcasing various mobile mockups of a roommate management app on an orange background.',
       description:"Find harmony with your roommates with Cohabitat! Divvy up tasks, share expenses, and get rewarded for responsibility by creating a joyful home.",
-      skills: ['UX Research', 'UI Design', 'User Testing', 'Product Design'],
+      skills: ['UI Design', 'User Testing', 'Product Design','UX Research', 'Onboarding'],
       tools: 'Figma, Trello, Miro, Zoom',
     },
     {
