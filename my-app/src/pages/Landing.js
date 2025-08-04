@@ -24,9 +24,42 @@ function Landing({uxProjects}) {
                     <img className='landing-headshot' src={headshot} alt='Headshot of Josie Griffin from her shoulders up in black and white'/>
                 </figure>
             </div>
-            <section class="principles__wrapper">
+            {/*<section class="principles__wrapper">
             <h2 className="principles__title"><span className="title__break">|</span> my core principles</h2>
-            <ThreeCS className="principles__wrapper" statTitle="Communication" statText="Truly listening to what others have to say and asking insightful questions to drive feedback." statTitle2="Problem-Solving" statText2="Approaching problems in a flexible way, using product strategy to seek simple solutions." statTitle3="Accessibility" statText3="Upholding accessibility standards with empathy to consider and meet every user's needs."></ThreeCS></section>
+            <ThreeCS className="principles__wrapper" statTitle="Communication" statText="Truly listening to what others have to say and asking insightful questions to drive feedback." statTitle2="Problem-Solving" statText2="Approaching problems in a flexible way, using product strategy to seek simple solutions." statTitle3="Accessibility" statText3="Upholding accessibility standards with empathy to consider and meet every user's needs."></ThreeCS></section>*/}
+            <section class="principles__wrapper CS-component__wrapper case-study__padding fullCS__wrapper">
+                <h2><span className="title__break">|</span> my core principles</h2>
+                <section className="threeCS--stats__wrap">
+                    <div className="principle__wrap case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-regular fa-comments principle--icon fa-3x"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>Communication</h4>
+                            <p>Truly listening to what others have to say and asking insightful questions to drive feedback</p>
+                        </div>
+                    </div>
+                    <div className="principle__wrap case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-solid fa-pencil principle--icon fa-3x"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>Problem Solving</h4>
+                            <p>Approaching problems in a flexible way, using product strategy to seek simple solutions.</p>
+                        </div>
+                    </div>
+                    <div className="principle__wrap case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-solid fa-hand-holding-heart principle--icon fa-3x"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>Accessibility</h4>
+                            <p>Upholding accessibility standards with empathy to consider and meet every user's needs.</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </section>
             <section className="case-study__bg featured__wrapper">
             <h2><span className="title__break">|</span> featured case studies</h2>
                 <div className="featured-projects__wrapper">

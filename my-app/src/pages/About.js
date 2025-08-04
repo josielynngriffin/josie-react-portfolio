@@ -16,25 +16,69 @@ function About() {
                 <p className="about__blurb">I thrive in cross-functional environments where product thinking, research, and my development knowledge come together in impactful design.</p>
                 </section>
             </section>
-            {/*<section class="principles__wrapper">
-            <h2><span className="title__break">|</span> my core principles</h2>
-            <section className="threeCS--stats__wrap">
-                <div className="threeCS--stat__wrap">
-                    <h4>Communication</h4>
-                    <p>Truly listening to what others have to say and asking insightful questions to drive feedback.</p>
-                </div>
-                <div className="threeCS--stat__wrap">
-                    <h4>Problem-Solving</h4>
-                    <p>Approaching problems in a flexible way, using product strategy to seek simple solutions.</p>
-                </div>
-                <div className="threeCS--stat__wrap">
-                    <h4>Accessibility</h4>
-                    <p>Upholding accessibility standards with empathy to consider and meet every user's needs.</p>
-                </div>
-            </section></section>*/}
             <section className="moreabout__wrapper">
                 <h2><span className="title__break">|</span> more about me</h2>
-                <p className="about__blurb">Outside of design and development, I love to spend time in the kitchen, get outdoors, and read! I am a maker at heart, always dreaming up big ideas in my sketchbook and trying to learn new skills.</p>
+                <p>Outside of design and development, I love to spend time in the kitchen, get outdoors, and read! I am a maker at heart, always dreaming up big ideas in my sketchbook and trying to learn new skills.</p>
+            </section>
+            <section className="principles__wrapper CS-component__wrapper">
+                <h2 className="m-auto"><span className="title__break">|</span> my key strengths</h2>
+                <section className="threeCS--stats__wrap">
+                    <div className="principle__wrap princple__wrap--grow case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-solid fa-clock fa-3x principle--icon"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>2+ Years of Experience</h4>
+                            <p>My background spans academic projects and real-world experience in B2B and e-commerce.</p>
+                        </div>
+                    </div>
+                    <div className="principle__wrap princple__wrap--grow case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-solid fa-mobile-screen-button fa-3x principle--icon"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>UX & UI Design Focus</h4>
+                            <p>I apply product thinking and visual design principles to craft intuitive experiences.</p>
+                        </div>
+                    </div>
+                    <div className="principle__wrap princple__wrap--grow case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-solid fa-code fa-3x principle--icon"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>Web Development Skills</h4>
+                            <p>My coding skills enhance communication and enable me to design more realistically.</p>
+                        </div>
+                    </div>
+                    <div className="principle__wrap princple__wrap--grow case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-regular fa-hand-point-up fa-3x principle--icon"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>Detail-Oriented</h4>
+                            <p>I catch subtle details during QA and UAT others to ensure pixel-perfect implementation at launch.</p>
+                        </div>
+                    </div>
+                    <div className="principle__wrap princple__wrap--grow case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-solid fa-book-open fa-3x principle--icon"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>Learning Mindset</h4>
+                            <p>I value feedback, collaboration, and continuous learning to keep creating innovative solutions.</p>
+                        </div>
+                    </div>
+                    <div className="principle__wrap princple__wrap--grow case-study-image__radius">
+                        <div className="principle--icon__wrap">
+                            <i className="fa-regular fa-handshake fa-3x principle--icon"></i>
+                        </div>
+                        <div className="principle--text__wrap">
+                            <h4>Collaboration</h4>
+                            <p>I’ve successfully collaborated with product, business, engineering, analytics, and marketing teams.</p>
+                        </div>
+                    </div>
+                </section>
+                
             </section>
             {/*
             <section>
@@ -60,7 +104,7 @@ function About() {
             </section>*/}
             
             <section className="skills__wrapper">
-                <h2 className="skills__title"><span className="title__break">|</span>  skills</h2>
+                <h2 className="skills__title m-auto"><span className="title__break">|</span>  skills</h2>
                 <section class="skills__card skills__card-web">
                     <h3 className="skills__card-title">ux</h3>
                     <ul class="skills__list">
