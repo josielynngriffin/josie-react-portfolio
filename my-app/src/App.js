@@ -105,7 +105,7 @@ function App() {
 
   const uxProjects = [
     {
-      name:"The Restaurant Store Checkout - Redesigning to Drive Higher Conversion",
+      name:" Redesigning The Restaurant Store's Checkout to Drive Higher Conversion",
       csName:"Checkout Flow Redesign",
       roles: "UI Designer",
       timeline: "Q1 2025",
@@ -117,7 +117,7 @@ function App() {
       tools: 'Figma, Miro, Google Analytics, Microsoft Clarity, Lyssna',
     },
     {
-      name:"The Restaurant Store About Us Page - Reimagining Customer Clarity",
+      name:"Reimagining Customer Clarity for The Restaurant Store's About Us Page",
       csName:"About Us Page Redesign",
       roles: "UX Researcher & UI Designer",
       timeline: "Q3 2024",
@@ -129,7 +129,7 @@ function App() {
       tools: 'Figma, Miro, Google Analytics, Microsoft Clarity',
     },
     {
-      name:"Cohabitat - App Design Enabling Adult Roommates to Live In Harmony",
+      name:"Rewarding Responsibility to Enable Adult Roommates to Live In Harmony with Cohabitat",
       csName:"Cohabitat",
       roles: "UX Researcher & UI Designer",
       timeline: "3 weeks",
@@ -141,7 +141,7 @@ function App() {
       tools: 'Figma, Trello, Miro, Zoom',
     },
     {
-      name:"Loving Care Cat Rescue - Nonprofit Redesign",
+      name:"Boosting Community Engagement with Loving Care Cat Rescue, A Nonprofit Redesign",
       csName: "Loving Care Cat Rescue Redesign",
       roles: "UX Researcher & UI Designer",
       timeline: "3 weeks",
