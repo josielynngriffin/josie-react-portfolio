@@ -39,7 +39,7 @@ function App() {
  
   const projects = [
     {
-      name:"Somniary",
+      name:"Somniary - Empowering Reflection Through Secure, Personalized Dream Tracking",
       githubLink:"https://github.com/Cat-Scratch-Feev/somniary",
       liveLink:"https://pacific-tor-76597-f8e2bab9d69c.herokuapp.com/landing",
       image:Somniary,
@@ -48,7 +48,7 @@ function App() {
       skills: ['Express.js', 'Handlebars.js', 'MySQL', 'JavaScript', 'Saas Product Design'],
     },
     {
-      name:"feev.io",
+      name:"feev.io - Gamifying Knowledge to Drive Engagement in a Competitive Trivia Experience",
       githubLink:"https://github.com/Cat-Scratch-Feev/trivia-feev",
       liveLink:"https://feevio-9028928ec5ce.herokuapp.com/",
       image:Feev,
@@ -105,7 +105,7 @@ function App() {
 
   const uxProjects = [
     {
-      name:" Redesigning The Restaurant Store's Checkout to Drive Higher Conversion",
+      name:"Redesigning The Restaurant Store's Checkout to Drive Higher Conversion",
       csName:"Checkout Flow Redesign",
       roles: "UI Designer",
       timeline: "Q1 2025",
