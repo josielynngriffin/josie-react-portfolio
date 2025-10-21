@@ -3,19 +3,61 @@
     --NunitoSans: "Nunito", sans-serif;
     --Roca: "roca", sans-serif;
     --background-color: #F5F5F5;
-    --form-background-color:#CDD2B0 ;
-    --form-button-color:#5A6445 ;
+    --form-background-color:#CDD2B0;
+    --form-button-color:#5A6445;
+    --form-input-color:#F5F5F5;
     --orange-highlight: #B1511B;
     --main-accent-color: #5A6445;
     --main-second-dark: #76775B;
     --second-accent-color: #CDD2B0;
-    --form-text-color: #F5F5F5;
     --lightest-green: #E5E9CE;
+    --base-text: black;
+    --white-text: #F5F5F5;
+    --case-background: #ececec;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #251a1a;
+    --form-background-color:#CDD2B0;
+    --form-button-color:#5A6445;
+    --form-input-color:#F5F5F5;
+    --main-accent-color: #E5E9CE;
+    --main-second-dark: #76775B;
+    --second-accent-color: #76775B;
+    --lightest-green: #76775b;
+    --base-text: white;
+    --white-text: #F5F5F5;
+    --case-background: #0e0b0b;
+    --orange-highlight: #B1511B;
+  }
+#contact-form > label, .contact-form__title{
+    color:black;
+}
+}
+@media (prefers-contrast: more) {
+  :root {
+    --background-color: #F5F5F5;
+    --form-background-color:#CDD2B0;
+    --form-button-color:#5A6445;
+    --form-input-color:#F5F5F5;
+    --orange-highlight: #B1511B;
+    --main-accent-color: #5A6445;
+    --main-second-dark: #76775B;
+    --second-accent-color: #CDD2B0;
+    --lightest-green: #E5E9CE;
+    --base-text: black;
+    --white-text: #F5F5F5;
+    --case-background: #ececec;
+  }
 }
 /*GENERAL */
+html, body {
+    background-color: var(--background-color, #F5F5F5);
+    color: var(--base-text, black);
+}
 body {
-    font-family: var(--Montserrat);
-    background-color: var(--background-color);
+    font-family: var(--Montserrat, sans-serif);   
     font-size: 1.05rem; 
 }
 
@@ -33,10 +75,10 @@ body {
     /*margin: 0 10%;*/
 }
 h1, h2, h3, .footer__name {
-    font-family: var(--Roca);
+    font-family: var(--Roca, sans-serif);
 }
 h4, h5, h6,.portfolio__nav-item {
-    font-family: var(--Montserrat);
+    font-family: var(--Montserrat, sans-serif);
 }
 p, li{
     line-height:1.5rem;
@@ -79,12 +121,12 @@ h4 {
     cursor: pointer;
     transition: bottom 0.3s ease;
     color:black;
-    background-color: var(--second-accent-color);
+    background-color: var(--second-accent-color, #CDD2B0);
 }
 
 .scrollButton:hover{
-    background-color: var(--main-accent-color);
-    color: white;
+    background-color: var(--main-accent-color, #5A6445);
+    color: var(--white-text, white);
 }
 
 /* HEADER AND NAV STYLING*/
@@ -101,19 +143,20 @@ h4 {
     font-weight:700;
 }
 .portfolio-name {
-    font-family:var(--Roca);
+    font-family:var(--Roca, sans-serif);
     font-size: 2.5rem;
     font-weight:600;
-    color: var(--main-accent-color);
+    color: var(--main-accent-color, #5A6445);
 }
 .portfolio-name__span{
     font-weight:300;
-    color:black;
+    color:var(--base-text, black);
 }
 
-.portfolio__nav-item {
+.portfolio__nav-item{
     font-size: 1.5rem;
     margin: 0 2rem;
+    color: var(--base-text, black);
 }
 .portfolio__nav-item:hover{
     font-weight: 600;
@@ -127,14 +170,14 @@ h4 {
 }
 
 .portfolio__nav-button {
-    background-color: var(--main-accent-color);
+    background-color: var(--form-button-color, #5A6445);
     padding: 10px 20px;
     border-radius: 30px;
-    color: var(--background-color);
+    color: var(--white-text, #F5F5F5);
 }
 
 .portfolio__nav-button:hover {
-    /*background-color: var(--second-accent-color);
+    /*background-color: var(--second-accent-color, #CDD2B0);
     color:black;*/
     background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
     transition: 0.4s;
@@ -148,30 +191,29 @@ h4 {
 
 .portfolio-name:hover,
 .portfolio__nav-icon:hover, .footer__name:hover {
-    color: var(--second-accent-color);
+    color: var(--second-accent-color, #CDD2B0);
     transition: 0.4s;
     cursor:pointer;
 }
 
-.portfolio__nav-icon {
-    color: var(--main-accent-color);
-}
+
 /* MOBILE NAV*/
 .mobile-nav__menu{
     display:none;
+    color: var(--main-accent-color, #5A6445);
 }
 .offcanvas {
-    background-color: var(--main-accent-color);
+    background-color: var(--form-button-color, #5A6445);
 }
 .portfolio__nav-item-m, .portfolio-name__span-m, .mobile-nav-close{
-    color:var(--background-color);
+    color:var(--white-text, #F5F5F5);
 }
 .btn-close{
     background-image: none;
     opacity: 100%;
 }
 .portfolio-name-m{
-    color:var(--second-accent-color);
+    color:var(--form-background-color, #CDD2B0);
 }
 
 /* LANDING*/
@@ -207,18 +249,18 @@ h4 {
 /*Visual */
 .landing-headshot, .about-hero__image {
     border-radius: 175px 175px 0 0;
-    box-shadow: 5px 10px var(--orange-highlight);
+    box-shadow: 5px 10px var(--orange-highlight, #B1511B);
 }
 
 .landing-headshot:hover,
 .portfolio__nav-button:hover, .about-hero__image:hover, .scrollButton:hover, .contactForm__button:hover {
-    box-shadow: 10px 10px var(--orange-highlight);
+    box-shadow: 10px 10px var(--orange-highlight, #B1511B);
     transition: 0.4s;
 }
 
 .landing__name--color,
 .landing__job-title--color {
-    color: var(--main-accent-color);
+    color: var(--main-accent-color, #5A6445);
 }
 .principles__wrapper{
     display:flex;
@@ -262,7 +304,7 @@ h4 {
 }
 
 .title__break {
-    color: var(--main-accent-color);
+    color: var(--main-accent-color, #5A6445);
 }
 
 .about__title{
@@ -287,21 +329,21 @@ h4 {
     align-items: center;
     padding:1rem 1rem;
     /*margin:0 1rem;*/
-    color:white;
+    color:var(--white-text, #F5F5F5);
     /*height:25rem;*/
     flex-basis:23rem;
 }
 .skills__card-web{
     border-radius: 125px 0 125px 0;
-    background-color:var(--main-accent-color);
+    background-color:var(--form-button-color, #5A6445);
 }
 .skills__card-dev{
     border-radius: 0 125px 0 125px;
-    background-color: var(--main-second-dark);
+    background-color: var(--main-second-dark, #76775B);
 }
 .skills__card-3{
     border-radius: 125px 0 125px 0;
-    background-color:var(--main-accent-color);
+    background-color:var(--form-button-color, #5A6445);
 }
 .skills__list{
     align-self:flex-start;
@@ -325,7 +367,7 @@ h4 {
     flex: 1 1 200px;
     gap:1rem;
     text-align: center;
-    background-color: var(--form-background-color);
+    background-color: var(--form-background-color, #CDD2B0);
     padding:1rem;
     border-radius: 50px;
 }*/
@@ -339,7 +381,7 @@ h4 {
     align-items: top;
     justify-content: center;
     padding:15px;
-    background-color: var(--lightest-green);
+    background-color: var(--lightest-green, #E5E9CE);
 }
 .princple__wrap--grow{
     flex: 1 1 330px;
@@ -353,7 +395,7 @@ h4 {
 .principle--icon{
     /*font-size:70px;
     width:87.5px;*/
-    color: var(--main-accent-color);
+    color: var(--main-accent-color, #5A6445);
     text-align: center;
 }
 .principle--icon__wrap{
@@ -407,13 +449,13 @@ h4 {
 }
 
 .portfolio__icon {
-    color: var(--main-accent-color);
+    color: var(--main-accent-color, #5A6445);
     margin: 0.5rem 0.5rem;
 }
 
 .portfolio__project--description {
-    background-color: var(--form-button-color);
-    color: var(--background-color);
+    background-color: var(--form-button-color, #5A6445);
+    color: var(--white-text, #F5F5F5);
     padding: 1.5rem;
     margin: 1rem 0;
 }
@@ -431,7 +473,7 @@ ul {
     padding:0;
 }
 .portfolio-case__link{
-    color: var(--orange-highlight);
+    color: var(--orange-highlight, #B1511B);
 }
 .portfolio-case__link:hover{ 
     color: #973D0A;
@@ -440,7 +482,7 @@ ul {
     text-decoration: underline;
 }
 .project__title{
-    color:var(--main-accent-color);
+    color:var(--main-accent-color, #5A6445);
     font-weight:bolder;
     font-size:1.5rem;
 }
@@ -492,7 +534,7 @@ ul {
     padding:1rem 10%;
 }
 .case-study__bg{
-    background-color:#ececec;
+    background-color:var(--case-background, #ececec);
     padding:2rem 10%;
 }
 .case-study__center{
@@ -613,7 +655,7 @@ ul {
     margin:0 1rem;
 }
 .contact-form__container{
-    background-color:var(--form-background-color);
+    background-color:var(--form-background-color, #CDD2B0);
     width:30rem;
     height:auto;
     border-radius: 50px;
@@ -640,18 +682,20 @@ ul {
     resize:none;
     height:10rem;
 }
+
 .contact-form__textarea, .contact-form__input{
     text-indent:1.25rem;
     width:100%;
     margin-top: 0.75rem;
     padding:0.5rem;
-    font-family: var(--Montserrat);
+    font-family: var(--Montserrat, sans-serif);
+    background-color: var(--form-input-color);
 }
 #contact-form > label, .contact-form__title{
     align-self:flex-start;
     font-weight:600;
     width:100%;
-    font-family: var(--Roca);
+    font-family: var(--Roca, sans-serif);
 }
 .contactForm__button{
     width: 50%;
@@ -664,8 +708,8 @@ ul {
     border-color: transparent;
     border-width:3px;
     border-style:solid;
-    background-color: var(--form-button-color);
-    color:var(--form-text-color);
+    background-color: var(--form-button-color, #5A6445);
+    color:var(--white-text, #F5F5F5);
 }
 .contactForm__button:hover{
     font-weight: 600;
@@ -678,23 +722,23 @@ ul {
     flex: 1 1 285px;
 }
 .button__secondary{
-    background-color: var(--background-color);
-    border-color: var(--orange-highlight);
+    background-color: var(--white-text, #F5F5F5);
+    border-color: var(--orange-highlight, #B1511B);
     border-width:3px;
     border-style:solid;
-    color: var(--orange-highlight);
+    color: var(--orange-highlight, #B1511B);
 }
 .button__secondary:hover{
-    color: var(--orange-highlight);
-    background-color: var(--background-color);
+    color: var(--orange-highlight, #B1511B);
+    background-color: var(--background-color, #F5F5F5);
     background-image: linear-gradient(rgb(0 0 0/5%) 0 0);
 }
 /*.button__secondary{
-    background-color: var(--second-accent-color);
+    background-color: var(--second-accent-color, #CDD2B0);
     color: black;
 }
 .button__secondary:hover{
-    background-color: var(--main-second-dark);
+    background-color: var(--main-second-dark, #76775B);
 }*/
 /*RESUME*/
 .resume__page{
@@ -726,16 +770,16 @@ footer {
 .footer__name {
     font-size: 2rem;
     margin:0;
-    color: var(--main-accent-color);
+    color: var(--main-accent-color, #5A6445);
 }
 
 .footer__small {
     font-size: 1rem;
-    font-family: var(--Roboto);
+    font-family: var(--Montserrat, sans-serif);
 }
 
 .footer__break {
-    background-color: var(--orange-highlight);
+    background-color: var(--orange-highlight, #B1511B);
     width: 30%;
     height: 2.5px;
     border-width: 0;
