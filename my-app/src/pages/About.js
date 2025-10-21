@@ -56,7 +56,7 @@ function About() {
                         </div>
                         <div className="principle--text__wrap">
                             <h4>Detail-Oriented</h4>
-                            <p>I catch subtle details during QA and UAT others to ensure pixel-perfect implementation at launch.</p>
+                            <p>I catch subtle details during QA and UAT to ensure pixel-perfect implementation at launch.</p>
                         </div>
                     </div>
                     <div className="principle__wrap princple__wrap--grow case-study-image__radius">
